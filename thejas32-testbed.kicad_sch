@@ -22432,7 +22432,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Module_DCDC:Mini 360"
+		(property "Footprint" "project_lib:Mini360_step-down"
 			(at 252.73 128.27 0)
 			(effects
 				(font
@@ -32605,7 +32605,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Module_DCDC:Mini 360"
+		(property "Footprint" "project_lib:Mini360_step-down"
 			(at 252.73 95.25 0)
 			(effects
 				(font

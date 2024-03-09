@@ -4015,7 +4015,7 @@
 		(path "/adfe05de-7f8c-48df-b205-ba3c88785351")
 		(sheetname "Root")
 		(sheetfile "thejas32-testbed.kicad_sch")
-		(attr exclude_from_pos_files exclude_from_bom)
+		(attr exclude_from_pos_files)
 		(fp_circle
 			(center 0 0)
 			(end 3.2 0)
@@ -6592,7 +6592,7 @@
 		(path "/31cd350d-6544-45b8-b7dd-30243408d760")
 		(sheetname "Root")
 		(sheetfile "thejas32-testbed.kicad_sch")
-		(attr exclude_from_pos_files exclude_from_bom)
+		(attr exclude_from_pos_files)
 		(fp_circle
 			(center 0 0)
 			(end 3.2 0)
@@ -10769,7 +10769,7 @@
 		(path "/210b83ac-6fd3-4508-90c1-291961807f9d")
 		(sheetname "Root")
 		(sheetfile "thejas32-testbed.kicad_sch")
-		(attr exclude_from_pos_files exclude_from_bom)
+		(attr exclude_from_pos_files)
 		(fp_circle
 			(center 0 0)
 			(end 3.2 0)
@@ -12476,27 +12476,14 @@
 			)
 		)
 	)
-	(footprint "Module_DCDC:Mini 360"
+	(footprint "project_lib:Mini360_step-down"
 		(layer "F.Cu")
 		(uuid "4cb0060f-23a6-41af-8001-8fa7c3229769")
 		(at 162.58 136.16 90)
 		(property "Reference" "U4"
-			(at 0 -0.5 90)
-			(unlocked yes)
+			(at 0 0.5 90)
 			(layer "F.SilkS")
-			(uuid "3ab44590-df5e-475e-9340-4e4eded6a68e")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.1)
-				)
-			)
-		)
-		(property "Value" "MINI360 DC-DC"
-			(at 0 1 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(uuid "79ef10e2-03a1-4c27-8ed6-c55787d5ab1c")
+			(uuid "935c4718-46c8-4109-b7af-780cfb6fae85")
 			(effects
 				(font
 					(size 1 1)
@@ -12504,12 +12491,23 @@
 				)
 			)
 		)
-		(property "Footprint" "Module_DCDC:Mini 360"
+		(property "Value" "MINI360 DC-DC"
+			(at 0 -0.5 90)
+			(layer "F.Fab")
+			(uuid "8ea19528-b6bb-45da-b3ee-cacaa3b2c42a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "project_lib:Mini360_step-down"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "dc900e19-df3f-4440-a76e-2545ecb0ca7b")
+			(uuid "b51c6a24-9e06-49f2-b042-761d3737b640")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12521,7 +12519,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "7b9db358-96a6-4157-9623-22079d50ec28")
+			(uuid "bda1f2f8-ec99-4a09-b116-0c020d121b07")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12533,7 +12531,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d3df0732-33f6-4d63-801e-c75621c38530")
+			(uuid "8865b9b7-3de4-4783-bb23-4b0718c98ab7")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12544,72 +12542,89 @@
 		(sheetname "Root")
 		(sheetfile "thejas32-testbed.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start -15.24 -7.62)
-			(end 12.7 7.62)
+		(fp_line
+			(start -8.75 -5.54)
+			(end 8.75 -5.54)
 			(stroke
-				(width 0.1)
-				(type default)
+				(width 0.15)
+				(type solid)
 			)
-			(fill none)
 			(layer "F.SilkS")
-			(uuid "76cee55a-f248-4399-850c-0637429cea54")
+			(uuid "dcff5929-bb1e-4455-a41f-bb2c6619d93e")
 		)
-		(fp_text user "${REFERENCE}"
-			(at 0 2.5 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(uuid "933d5977-e04e-41fb-bae0-94cfde2b1778")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
+		(fp_line
+			(start -8.75 -5.54)
+			(end -8.75 5.53)
+			(stroke
+				(width 0.15)
+				(type solid)
 			)
+			(layer "F.SilkS")
+			(uuid "69c15d42-756e-46a3-8af5-58db7a489aed")
 		)
-		(pad "1" thru_hole circle
-			(at -12.7 -5.08 90)
-			(size 1.524 1.524)
+		(fp_line
+			(start 8.75 5.53)
+			(end 8.75 -5.54)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "67750497-f091-4ff6-bf0b-46e59642d14a")
+		)
+		(fp_line
+			(start 8.75 5.53)
+			(end -8.75 5.53)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "90d91bbc-3a6c-49ec-9f1e-f8cb80dcaee9")
+		)
+		(pad "1" thru_hole oval
+			(at -7.62 -4.57 90)
+			(size 2.5 2)
 			(drill 0.762)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 2 "GND")
 			(pinfunction "IN-")
 			(pintype "power_in")
-			(uuid "c7547a3a-0f56-4e7e-8eb4-1091d4e73304")
+			(uuid "c141208e-6049-45f8-83c8-2f1738114676")
 		)
-		(pad "2" thru_hole circle
-			(at -12.7 5.08 90)
-			(size 1.524 1.524)
+		(pad "2" thru_hole oval
+			(at -7.62 4.57 90)
+			(size 2.5 2)
 			(drill 0.762)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 9 "Net-(J2-VBUS)")
 			(pinfunction "IN+")
 			(pintype "power_in")
-			(uuid "a1a0eb0e-427b-49ee-988c-7f3616a946ce")
+			(uuid "a39167c1-7309-4e75-8711-d4c2f83190ab")
 		)
-		(pad "3" thru_hole circle
-			(at 10.16 -5.08 90)
-			(size 1.524 1.524)
+		(pad "3" thru_hole oval
+			(at 7.62 -4.57 90)
+			(size 2.5 2)
 			(drill 0.762)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 2 "GND")
 			(pinfunction "OUT-")
 			(pintype "power_out")
-			(uuid "d37b097f-b073-4972-a3d4-23dd8caa7ccb")
+			(uuid "1895ebf2-4de1-4506-a440-d126d0725fce")
 		)
-		(pad "4" thru_hole circle
-			(at 10.16 5.08 90)
-			(size 1.524 1.524)
+		(pad "4" thru_hole oval
+			(at 7.62 4.57 90)
+			(size 2.5 2)
 			(drill 0.762)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 3 "PWR_3V3")
 			(pinfunction "OUT+")
 			(pintype "power_out")
-			(uuid "416bb64f-c72f-495e-b2e1-4463c4546f87")
+			(uuid "3b2e5b04-ef67-4af2-b25c-33db94558fd6")
 		)
 	)
 	(footprint "project_lib:proj_C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
@@ -23076,27 +23091,14 @@
 			)
 		)
 	)
-	(footprint "Module_DCDC:Mini 360"
+	(footprint "project_lib:Mini360_step-down"
 		(layer "F.Cu")
 		(uuid "bc76100f-e32f-464d-b9b1-218e038b0119")
 		(at 145.92 136.16 90)
 		(property "Reference" "U5"
-			(at 0 -0.5 90)
-			(unlocked yes)
+			(at 0 0.5 90)
 			(layer "F.SilkS")
-			(uuid "f6bfb8c0-12f1-466d-9d73-fc9ddf709a5c")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.1)
-				)
-			)
-		)
-		(property "Value" "MINI360 DC-DC"
-			(at 0 1 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(uuid "b848e96a-e8e3-4203-b8fc-cd80706f2a52")
+			(uuid "a9d94544-49d8-47a1-a165-c1dc022762f0")
 			(effects
 				(font
 					(size 1 1)
@@ -23104,12 +23106,23 @@
 				)
 			)
 		)
-		(property "Footprint" "Module_DCDC:Mini 360"
+		(property "Value" "MINI360 DC-DC"
+			(at 0 -0.5 90)
+			(layer "F.Fab")
+			(uuid "917ad44a-4dce-429f-940c-576ab313f6ce")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "project_lib:Mini360_step-down"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c08c9e01-9f5a-4d06-b4b9-61ce36398cb4")
+			(uuid "1fbea94e-ffe8-4244-8399-5c857d77d823")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23121,7 +23134,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "40956a1a-974d-46ee-8110-a192e3cfb641")
+			(uuid "449e4ac6-b826-441e-9a55-dd2304e488d9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23133,7 +23146,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "887f44cc-7730-4051-9b66-1085dd66115c")
+			(uuid "2d7016d0-7e18-4336-8e88-d96a0b5075c6")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23144,72 +23157,89 @@
 		(sheetname "Root")
 		(sheetfile "thejas32-testbed.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start -15.24 -7.62)
-			(end 12.7 7.62)
+		(fp_line
+			(start -8.75 -5.54)
+			(end 8.75 -5.54)
 			(stroke
-				(width 0.1)
-				(type default)
+				(width 0.15)
+				(type solid)
 			)
-			(fill none)
 			(layer "F.SilkS")
-			(uuid "48502f11-3158-4092-996d-57e840ef19e0")
+			(uuid "984b8f36-ea75-4eec-b8c8-dbe42b6e6cec")
 		)
-		(fp_text user "${REFERENCE}"
-			(at 0 2.5 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(uuid "ff05853f-a101-4b5c-a6ab-782c8aee4216")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
+		(fp_line
+			(start -8.75 -5.54)
+			(end -8.75 5.53)
+			(stroke
+				(width 0.15)
+				(type solid)
 			)
+			(layer "F.SilkS")
+			(uuid "0e76b499-e9cf-4c20-a6ba-ffc8bff8a2b6")
 		)
-		(pad "1" thru_hole circle
-			(at -12.7 -5.08 90)
-			(size 1.524 1.524)
+		(fp_line
+			(start 8.75 5.53)
+			(end 8.75 -5.54)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "23f32cac-e92b-491f-b8ff-5b60a76d1d19")
+		)
+		(fp_line
+			(start 8.75 5.53)
+			(end -8.75 5.53)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "463992ad-44c7-4722-9c40-ba2af3d371ce")
+		)
+		(pad "1" thru_hole oval
+			(at -7.62 -4.57 90)
+			(size 2.5 2)
 			(drill 0.762)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 2 "GND")
 			(pinfunction "IN-")
 			(pintype "power_in")
-			(uuid "c6558f29-6ded-4e38-a611-49df08200783")
+			(uuid "6633bee9-5335-4eff-9a89-cbcdaa40dd8d")
 		)
-		(pad "2" thru_hole circle
-			(at -12.7 5.08 90)
-			(size 1.524 1.524)
+		(pad "2" thru_hole oval
+			(at -7.62 4.57 90)
+			(size 2.5 2)
 			(drill 0.762)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 9 "Net-(J2-VBUS)")
 			(pinfunction "IN+")
 			(pintype "power_in")
-			(uuid "e7ff8804-9767-4f74-b90c-102233de021d")
+			(uuid "9c8768ca-31fe-4adf-aa3d-042c02e43a03")
 		)
-		(pad "3" thru_hole circle
-			(at 10.16 -5.08 90)
-			(size 1.524 1.524)
+		(pad "3" thru_hole oval
+			(at 7.62 -4.57 90)
+			(size 2.5 2)
 			(drill 0.762)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 2 "GND")
 			(pinfunction "OUT-")
 			(pintype "power_out")
-			(uuid "78f67129-f72d-4063-99f2-99736e5bb41d")
+			(uuid "c58e7273-19b9-4ee8-81fa-af176133f1f8")
 		)
-		(pad "4" thru_hole circle
-			(at 10.16 5.08 90)
-			(size 1.524 1.524)
+		(pad "4" thru_hole oval
+			(at 7.62 4.57 90)
+			(size 2.5 2)
 			(drill 0.762)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 1 "PWR_1V2")
 			(pinfunction "OUT+")
 			(pintype "power_out")
-			(uuid "44331eac-650a-4921-b782-18907b7f9ee2")
+			(uuid "e251f201-e314-4bf9-a363-f57f7b8cd767")
 		)
 	)
 	(footprint "project_lib:proj_R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
@@ -32824,7 +32854,7 @@
 		(path "/f0ad9989-a134-4fcf-8a7a-18c2dd295575")
 		(sheetname "Root")
 		(sheetfile "thejas32-testbed.kicad_sch")
-		(attr exclude_from_pos_files exclude_from_bom)
+		(attr exclude_from_pos_files)
 		(fp_circle
 			(center 0 0)
 			(end 3.2 0)
