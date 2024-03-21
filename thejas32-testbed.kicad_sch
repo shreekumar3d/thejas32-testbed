@@ -462,7 +462,7 @@
 				)
 			)
 		)
-		(symbol "Connector_Generic:Conn_01x06"
+		(symbol "Connector_Generic:Conn_01x05"
 			(pin_names
 				(offset 1.016) hide)
 			(exclude_from_sim no)
@@ -476,8 +476,8 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x06"
-				(at 0 -10.16 0)
+			(property "Value" "Conn_01x05"
+				(at 0 -7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -502,7 +502,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -529,18 +529,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x06_1_1"
-				(rectangle
-					(start -1.27 -7.493)
-					(end 0 -7.747)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
+			(symbol "Conn_01x05_1_1"
 				(rectangle
 					(start -1.27 -4.953)
 					(end 0 -5.207)
@@ -598,7 +587,7 @@
 				)
 				(rectangle
 					(start -1.27 6.35)
-					(end 1.27 -8.89)
+					(end 1.27 -6.35)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -690,24 +679,6 @@
 						)
 					)
 					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -7.62 0)
-					(length 3.81)
-					(name "Pin_6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -8718,6 +8689,10 @@
 		(uuid "36dc743e-0cf2-49e5-af2f-edbefaf6b5d7")
 	)
 	(no_connect
+		(at 502.92 219.71)
+		(uuid "37c699ae-5d1f-4859-b155-ea2cee9b2c1b")
+	)
+	(no_connect
 		(at 740.41 478.79)
 		(uuid "3a621984-86b1-49e4-9d1f-93bae5ddd74a")
 	)
@@ -8820,6 +8795,10 @@
 	(no_connect
 		(at 538.48 488.95)
 		(uuid "b213309d-afdb-4c9c-9a6b-b75d587b53b0")
+	)
+	(no_connect
+		(at 574.04 481.33)
+		(uuid "c46f64de-6e8b-4252-8dfb-97c38904cbcf")
 	)
 	(no_connect
 		(at 574.04 461.01)
@@ -9007,7 +8986,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 417.83) (xy 267.97 417.83)
+			(xy 213.36 417.83) (xy 267.97 417.83)
 		)
 		(stroke
 			(width 0)
@@ -9624,16 +9603,6 @@
 			(type default)
 		)
 		(uuid "206bf812-4fb4-4261-8027-aa33595b8922")
-	)
-	(wire
-		(pts
-			(xy 213.36 417.83) (xy 252.73 417.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "20db60ff-2ed8-413b-a3b5-a159f85cc19a")
 	)
 	(wire
 		(pts
@@ -11087,16 +11056,6 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 415.29) (xy 252.73 415.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "58be7eab-85e8-4eed-8113-be2403589bea")
-	)
-	(wire
-		(pts
 			(xy 740.41 486.41) (xy 745.49 486.41)
 		)
 		(stroke
@@ -11614,16 +11573,6 @@
 			(type default)
 		)
 		(uuid "69e667b5-c829-4005-bf60-90018c11afde")
-	)
-	(wire
-		(pts
-			(xy 574.04 481.33) (xy 588.01 481.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6a9c6768-6cc4-42e1-8f21-aecc7ef8476a")
 	)
 	(wire
 		(pts
@@ -12427,26 +12376,6 @@
 	)
 	(wire
 		(pts
-			(xy 281.94 467.36) (xy 281.94 469.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "85e18249-4f37-4e70-b6f7-f4b95a2e64c7")
-	)
-	(wire
-		(pts
-			(xy 444.5 337.82) (xy 453.39 337.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "86329329-1f35-42f0-b9d2-ef36a8031535")
-	)
-	(wire
-		(pts
 			(xy 452.12 262.89) (xy 452.12 269.24)
 		)
 		(stroke
@@ -12644,16 +12573,6 @@
 			(type default)
 		)
 		(uuid "8db0e3be-7a97-4282-9f2f-98c353e89e34")
-	)
-	(wire
-		(pts
-			(xy 260.35 415.29) (xy 267.97 415.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8e0737be-060b-4f05-bed5-30692333c0ba")
 	)
 	(wire
 		(pts
@@ -13827,6 +13746,16 @@
 	)
 	(wire
 		(pts
+			(xy 453.39 337.82) (xy 453.39 340.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5858f7d-d615-4105-a106-a98f2ca03dfc")
+	)
+	(wire
+		(pts
 			(xy 346.71 269.24) (xy 407.67 269.24)
 		)
 		(stroke
@@ -14724,6 +14653,16 @@
 			(type default)
 		)
 		(uuid "d50b452f-a3f6-471e-ba15-589bf975d96e")
+	)
+	(wire
+		(pts
+			(xy 200.66 415.29) (xy 267.97 415.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d51522bf-61c4-4d05-9899-9e7b9fb80f64")
 	)
 	(wire
 		(pts
@@ -17041,28 +16980,6 @@
 			)
 		)
 	)
-	(global_label "MCU_RESETN"
-		(shape input)
-		(at 588.01 481.33 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "2d65e4f8-d3f5-4660-863c-4a8d82b823d3")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 603.0903 481.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "MCU_PWM_5"
 		(shape input)
 		(at 307.34 297.18 0)
@@ -17131,7 +17048,7 @@
 	)
 	(global_label "RPi_COMPAT_GPIO_23"
 		(shape input)
-		(at 330.2 317.5 0)
+		(at 330.2 320.04 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -17141,7 +17058,7 @@
 		)
 		(uuid "34a64b78-7d7c-4ee5-8f04-2048a6ef8e8e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 353.5052 317.5 0)
+			(at 353.5052 320.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18517,7 +18434,7 @@
 	)
 	(global_label "RPi_COMPAT_GPIO_22"
 		(shape input)
-		(at 330.2 320.04 0)
+		(at 330.2 317.5 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -18527,7 +18444,7 @@
 		)
 		(uuid "93afa548-4ad9-4bd0-b024-9f91c00db507")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 353.5052 320.04 0)
+			(at 353.5052 317.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19551,7 +19468,7 @@
 	)
 	(global_label "RPi_COMPAT_GPIO_1"
 		(shape input)
-		(at 330.2 330.2 0)
+		(at 330.2 332.74 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -19561,7 +19478,7 @@
 		)
 		(uuid "cb7e898c-2207-46b3-9c52-19cff485a462")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 352.2957 330.2 0)
+			(at 352.2957 332.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19661,7 +19578,7 @@
 	)
 	(global_label "RPi_COMPAT_GPIO_0"
 		(shape input)
-		(at 330.2 332.74 0)
+		(at 330.2 330.2 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -19671,7 +19588,7 @@
 		)
 		(uuid "d6735d37-5563-431d-8bd4-1017fc227f48")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 352.2957 332.74 0)
+			(at 352.2957 330.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19694,28 +19611,6 @@
 		(uuid "da989b6e-0665-42ae-9381-bf9222f7e4d0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 36.8082 254 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "MCU_PWM_7"
-		(shape input)
-		(at 444.5 337.82 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "db40c7e6-840d-4d15-abb7-5121a6af16d8")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 430.1454 337.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20793,6 +20688,86 @@
 			(project "thejas32-testbed"
 				(path "/012bf1cf-e3e3-4b01-8e23-6b37d758d0e3"
 					(reference "R32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x05")
+		(at 458.47 332.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0ceae9c3-8b20-4f57-8c89-0a1bc45746d7")
+		(property "Reference" "J7"
+			(at 461.01 331.4699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x05"
+			(at 461.01 334.0099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
+			(at 458.47 332.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 458.47 332.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 458.47 332.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c94f6ef7-28ee-47e7-85bf-ea82e5afb3f4")
+		)
+		(pin "2"
+			(uuid "20d7e44d-c622-4fd1-8b69-e99cd60b2c36")
+		)
+		(pin "3"
+			(uuid "b2d8af86-3d5b-4510-ab1c-f2668b5ce696")
+		)
+		(pin "5"
+			(uuid "4d532de1-dd7c-40e1-8d52-f519478df28a")
+		)
+		(pin "4"
+			(uuid "2e9e78cc-2b4d-49b1-93e0-2f2ef2a35904")
+		)
+		(instances
+			(project "thejas32-testbed"
+				(path "/012bf1cf-e3e3-4b01-8e23-6b37d758d0e3"
+					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -24947,73 +24922,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Project-Specific:R_HandSolderable")
-		(at 256.54 417.83 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "69448dfa-f7d3-4581-a114-23575740df0b")
-		(property "Reference" "R13"
-			(at 256.794 417.83 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0E"
-			(at 256.794 420.116 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "project_lib:proj_R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 256.54 419.608 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 256.54 417.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 256.54 417.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "3b60459e-61bd-4eff-b89c-05c4ed43215f")
-		)
-		(pin "1"
-			(uuid "3154173e-5805-4fb7-8a1d-49b30b1c16db")
-		)
-		(instances
-			(project "thejas32-testbed"
-				(path "/012bf1cf-e3e3-4b01-8e23-6b37d758d0e3"
-					(reference "R13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 62.23 328.93 0)
 		(unit 1)
@@ -27057,89 +26965,6 @@
 			(project "thejas32-testbed"
 				(path "/012bf1cf-e3e3-4b01-8e23-6b37d758d0e3"
 					(reference "#PWR029")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x06")
-		(at 458.47 332.74 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "871dd586-acf7-4a07-a26d-ea8769a3b5ca")
-		(property "Reference" "J7"
-			(at 461.01 332.7399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x06"
-			(at 461.01 335.2799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
-			(at 458.47 332.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 458.47 332.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 458.47 332.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "573a0e23-9382-4e86-813a-6e1fcadb20b0")
-		)
-		(pin "5"
-			(uuid "543f7adc-842c-45f3-a7de-33498a0374c0")
-		)
-		(pin "3"
-			(uuid "af90fc59-2cb6-4932-9b00-8d86cf9b4688")
-		)
-		(pin "6"
-			(uuid "9cc2b1d6-784b-45e6-aec2-23dd8505e5ad")
-		)
-		(pin "1"
-			(uuid "e238cd7a-0325-45bf-ab65-51e0828cf21e")
-		)
-		(pin "2"
-			(uuid "d35459f0-cea4-48a5-80fe-0cdbef5dc580")
-		)
-		(instances
-			(project "thejas32-testbed"
-				(path "/012bf1cf-e3e3-4b01-8e23-6b37d758d0e3"
-					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -30014,73 +29839,6 @@
 			(project "thejas32-testbed"
 				(path "/012bf1cf-e3e3-4b01-8e23-6b37d758d0e3"
 					(reference "#PWR090")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Project-Specific:R_HandSolderable")
-		(at 256.54 415.29 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c6caa5e7-7d63-4aca-b15a-a474df33286c")
-		(property "Reference" "R12"
-			(at 256.54 415.29 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0E"
-			(at 256.54 413.258 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "project_lib:proj_R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 256.54 417.068 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 256.54 415.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 256.54 415.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ae244db2-f435-41ca-9d42-a41059965454")
-		)
-		(pin "1"
-			(uuid "4019decf-cda5-46bd-9e42-2c6e32c4a538")
-		)
-		(instances
-			(project "thejas32-testbed"
-				(path "/012bf1cf-e3e3-4b01-8e23-6b37d758d0e3"
-					(reference "R12")
 					(unit 1)
 				)
 			)
