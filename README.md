@@ -74,3 +74,9 @@ This project uses git submodules. To checkout everything, do:
 
 Raspberry Pi Pico footprint is a submodule.  If you don't go this, you'll not
 see the nice Pico in the 3D preview.
+
+# Credits
+
+* [RPi Pico Symbool and Footprint](https://github.com/ncarandini/KiCad-RP-Pico)
+* [Mini 360 Step Down Converter Footprint](https://github.com/rayvburn/KiCad)
+
