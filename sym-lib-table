@@ -1,0 +1,8 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "MCU_RaspberryPi_and_Boards")(type "KiCad")(uri "${KIPRJMOD}/KiCad-RP-Pico/RP-Pico Libraries/MCU_RaspberryPi_and_Boards.kicad_sym")(options "")(descr ""))
+  (lib (name "thejas")(type "KiCad")(uri "${KIPRJMOD}/thejas.kicad_sym")(options "")(descr ""))
+  (lib (name "Mini360_Buck_Module")(type "KiCad")(uri "${KIPRJMOD}/Mini360_Buck_Module.kicad_sym")(options "")(descr ""))
+  (lib (name "project_lib")(type "KiCad")(uri "${KIPRJMOD}/project_lib.kicad_sym")(options "")(descr ""))
+  (lib (name "Project-Specific")(type "KiCad")(uri "${KIPRJMOD}/Project-Specific.kicad_sym")(options "")(descr ""))
+)
