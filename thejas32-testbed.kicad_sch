@@ -7936,12 +7936,6 @@
 		(uuid "091240a4-6eb3-46a5-8c40-b7146c64cb91")
 	)
 	(junction
-		(at 314.96 240.03)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "09b6a652-df23-40c8-8244-b6dded50d099")
-	)
-	(junction
 		(at 175.26 349.25)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7958,12 +7952,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0ea58d83-2c71-4579-9bba-e407f57f8847")
-	)
-	(junction
-		(at 325.12 240.03)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0ec773a8-f619-49f9-8b70-f1312f5fa4fe")
 	)
 	(junction
 		(at 233.68 233.68)
@@ -8114,12 +8102,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3c3f3182-8db7-4f2d-85fd-36647a86bafa")
-	)
-	(junction
-		(at 304.8 240.03)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3c493fed-e591-4b45-9db2-955bf029977e")
 	)
 	(junction
 		(at 368.3 393.7)
@@ -8278,12 +8260,6 @@
 		(uuid "62d9d39a-fad3-4017-9c5b-0f19585ed470")
 	)
 	(junction
-		(at 335.28 240.03)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6395e8db-5560-4e50-819c-d1e547ee46c0")
-	)
-	(junction
 		(at 58.42 220.98)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8368,12 +8344,6 @@
 		(uuid "81315545-8441-4ca2-9668-4af40acd4474")
 	)
 	(junction
-		(at 295.91 240.03)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8266a537-6379-43f4-a88e-ea910a59375d")
-	)
-	(junction
 		(at 304.8 229.87)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8384,12 +8354,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8920bdb9-cc73-47ae-954f-63813496c90c")
-	)
-	(junction
-		(at 285.75 240.03)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "89fa3481-2dcf-4427-aadf-264e6ed3d026")
 	)
 	(junction
 		(at 273.05 284.48)
@@ -9113,7 +9077,7 @@
 	)
 	(wire
 		(pts
-			(xy 314.96 237.49) (xy 314.96 240.03)
+			(xy 314.96 238.76) (xy 314.96 240.03)
 		)
 		(stroke
 			(width 0)
@@ -9200,6 +9164,16 @@
 			(type default)
 		)
 		(uuid "0ad475a6-01f1-481e-a091-d6206da67505")
+	)
+	(wire
+		(pts
+			(xy 314.96 231.14) (xy 314.96 229.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b281217-4d1b-4dd3-9a13-efa06b8cbfa2")
 	)
 	(wire
 		(pts
@@ -9323,16 +9297,6 @@
 	)
 	(wire
 		(pts
-			(xy 285.75 240.03) (xy 285.75 241.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "11ab16b8-b508-4319-9f05-3475fd21563d")
-	)
-	(wire
-		(pts
 			(xy 755.65 424.18) (xy 755.65 440.69)
 		)
 		(stroke
@@ -9410,16 +9374,6 @@
 			(type default)
 		)
 		(uuid "1636082e-215c-4953-9c2a-b56517e6c5d1")
-	)
-	(wire
-		(pts
-			(xy 335.28 240.03) (xy 335.28 241.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1666be2a-2184-4d2b-9659-3684634f92e5")
 	)
 	(wire
 		(pts
@@ -10453,16 +10407,6 @@
 	)
 	(wire
 		(pts
-			(xy 304.8 240.03) (xy 304.8 241.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "40405c8b-e03e-4784-b876-e5bd64cc9615")
-	)
-	(wire
-		(pts
 			(xy 130.81 309.88) (xy 149.86 309.88)
 		)
 		(stroke
@@ -11210,16 +11154,6 @@
 			(type default)
 		)
 		(uuid "59e589e3-be4e-43b1-af57-026f673c3a47")
-	)
-	(wire
-		(pts
-			(xy 314.96 240.03) (xy 314.96 241.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5a412067-4418-4fde-903e-ada5bcca49e7")
 	)
 	(wire
 		(pts
@@ -12433,16 +12367,6 @@
 	)
 	(wire
 		(pts
-			(xy 295.91 240.03) (xy 295.91 241.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "85d9adbb-a07b-4c5f-9471-f587c9c8d04f")
-	)
-	(wire
-		(pts
 			(xy 444.5 337.82) (xy 453.39 337.82)
 		)
 		(stroke
@@ -13040,16 +12964,6 @@
 			(type default)
 		)
 		(uuid "994cf312-dde4-4c0b-9714-af41d5967f01")
-	)
-	(wire
-		(pts
-			(xy 325.12 240.03) (xy 325.12 241.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9ad5c791-ae16-4207-9606-8fb8e5b0f09d")
 	)
 	(wire
 		(pts
@@ -15815,6 +15729,18 @@
 		)
 		(uuid "0f6a721c-112e-4478-92b9-99090401b70a")
 	)
+	(text "Aligned Mounting holes"
+		(exclude_from_sim no)
+		(at 744.474 64.516 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 30 34 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "11397287-3ab5-4e8f-8114-85ec6e6258c2")
+	)
 	(text "I2C0 is available \non RPI header"
 		(exclude_from_sim no)
 		(at 274.828 466.344 0)
@@ -15881,6 +15807,18 @@
 		)
 		(uuid "2a518abb-b934-4141-8e19-77e6f9f06d98")
 	)
+	(text "Need to check of R4/R5 has any PU for I2C on Main RasPi. \nIf there, remove R4/R5"
+		(exclude_from_sim no)
+		(at 744.982 36.322 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 30 34 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "3621abe5-4b1f-4963-b604-755830c51557")
+	)
 	(text "Order of Pins:\nGND,\nCLK, CSN, MOSI, MISO\nVCC"
 		(exclude_from_sim no)
 		(at 307.848 466.598 0)
@@ -15935,6 +15873,18 @@
 			(justify right)
 		)
 		(uuid "517fdfca-2d5a-43be-b0fd-dd8ad9c44bb1")
+	)
+	(text "When Powering through RasPi, remove JP1"
+		(exclude_from_sim no)
+		(at 268.986 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 30 34 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "59f1ba54-ce80-4a3f-97d3-e96768a5bb68")
 	)
 	(text "SPI2 bus"
 		(exclude_from_sim no)
@@ -16036,6 +15986,18 @@
 		)
 		(uuid "7e27ad0d-675c-4b89-9b86-976b556c0f85")
 	)
+	(text "When Powering through RasPi, remove JP1"
+		(exclude_from_sim no)
+		(at 744.982 44.958 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 30 34 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "874e6e8a-fbef-4115-97c2-dd36a0152b7d")
+	)
 	(text "spi1\nslave interface"
 		(exclude_from_sim no)
 		(at 670.814 480.822 0)
@@ -16124,6 +16086,18 @@
 		)
 		(uuid "9db605de-c069-4d4b-bc01-651178c33d73")
 	)
+	(text "Change R2 to 100k for weak PD\n"
+		(exclude_from_sim no)
+		(at 744.728 26.924 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 30 34 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "ab6bf52c-cdf3-4f23-a099-25954f04d41a")
+	)
 	(text "PWR_FLAG eliminates\nfalse ERC errors due\nto jumpers"
 		(exclude_from_sim no)
 		(at 625.348 433.578 0)
@@ -16157,6 +16131,18 @@
 		)
 		(uuid "c37d55f3-8214-4ed8-816e-196fb29243ac")
 	)
+	(text "Need to add Properties like\nMPN\nManufacturer \nin properties for easier BOM creation"
+		(exclude_from_sim no)
+		(at 744.982 22.352 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 30 34 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "c6416df5-cd32-422c-b6e0-098c75b5c387")
+	)
 	(text "See layout instructions for decaps"
 		(exclude_from_sim no)
 		(at 52.324 219.964 0)
@@ -16177,6 +16163,18 @@
 			)
 		)
 		(uuid "c75f10bf-2472-496c-9fd7-f25b2b659dd2")
+	)
+	(text "DEbug UART 0 for master Pico is not conneted anywhere"
+		(exclude_from_sim no)
+		(at 744.982 41.148 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 30 34 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "c8bd128e-60f4-4e39-9bf3-5bc80c949424")
 	)
 	(text "See layout instructions for decaps"
 		(exclude_from_sim no)
@@ -16320,6 +16318,18 @@
 			(justify left)
 		)
 		(uuid "f6cbae10-35a3-4f9d-bf5f-970acc4e6573")
+	)
+	(text "Change R3 to 100k for weak PD\n"
+		(exclude_from_sim no)
+		(at 744.982 30.734 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 30 34 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "fc8049ea-e785-4c24-abc4-1fe11eee10c6")
 	)
 	(global_label "MCU_TST_MODE"
 		(shape input)
@@ -21026,11 +21036,12 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 314.96 244.348 0)
+			(at 314.96 246.888 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -27305,11 +27316,12 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 295.91 244.348 0)
+			(at 295.91 246.888 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -27501,11 +27513,12 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 304.8 244.348 0)
+			(at 304.8 246.888 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -27966,7 +27979,7 @@
 	)
 	(symbol
 		(lib_id "Project-Specific:DCAP_Farther")
-		(at 314.96 233.68 0)
+		(at 314.96 234.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -27974,7 +27987,7 @@
 		(dnp no)
 		(uuid "993dff54-0151-41ea-8dc4-e2a81f1adedd")
 		(property "Reference" "C11A1"
-			(at 316.23 237.236 0)
+			(at 316.23 238.506 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27983,7 +27996,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 316.23 239.776 0)
+			(at 316.23 241.046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27992,7 +28005,7 @@
 			)
 		)
 		(property "Footprint" "project_lib:proj_C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 315.9252 237.49 0)
+			(at 315.9252 238.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28001,7 +28014,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 314.96 233.68 0)
+			(at 314.96 234.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28010,7 +28023,7 @@
 			)
 		)
 		(property "Description" "Decoupling Capacitor farther from power pin"
-			(at 314.96 233.68 0)
+			(at 314.96 234.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29779,11 +29792,12 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 335.28 244.348 0)
+			(at 335.28 246.888 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -31282,11 +31296,12 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 325.12 244.348 0)
+			(at 325.12 246.888 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -31677,11 +31692,12 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 285.75 244.348 0)
+			(at 285.75 246.888 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
