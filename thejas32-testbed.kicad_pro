@@ -65,71 +65,71 @@
       "rule_severities": {
         "annular_width": "error",
         "clearance": "error",
-        "connection_width": "warning",
+        "connection_width": "error",
         "copper_edge_clearance": "error",
         "copper_sliver": "warning",
-        "courtyards_overlap": "error",
+        "courtyards_overlap": "warning",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
         "drill_out_of_range": "error",
         "duplicate_footprints": "warning",
-        "extra_footprint": "warning",
+        "extra_footprint": "error",
         "footprint": "error",
         "footprint_symbol_mismatch": "warning",
-        "footprint_type_mismatch": "ignore",
+        "footprint_type_mismatch": "error",
         "hole_clearance": "error",
         "hole_near_hole": "error",
-        "invalid_outline": "error",
-        "isolated_copper": "warning",
-        "item_on_disabled_layer": "error",
-        "items_not_allowed": "error",
+        "invalid_outline": "warning",
+        "isolated_copper": "error",
+        "item_on_disabled_layer": "ignore",
+        "items_not_allowed": "ignore",
         "length_out_of_range": "error",
-        "lib_footprint_issues": "warning",
-        "lib_footprint_mismatch": "warning",
-        "malformed_courtyard": "error",
-        "microvia_drill_out_of_range": "error",
-        "missing_courtyard": "ignore",
+        "lib_footprint_issues": "error",
+        "lib_footprint_mismatch": "ignore",
+        "malformed_courtyard": "warning",
+        "microvia_drill_out_of_range": "warning",
+        "missing_courtyard": "warning",
         "missing_footprint": "warning",
-        "net_conflict": "warning",
-        "npth_inside_courtyard": "ignore",
-        "padstack": "warning",
-        "pth_inside_courtyard": "ignore",
+        "net_conflict": "error",
+        "npth_inside_courtyard": "warning",
+        "padstack": "ignore",
+        "pth_inside_courtyard": "warning",
         "shorting_items": "error",
-        "silk_edge_clearance": "warning",
-        "silk_over_copper": "warning",
-        "silk_overlap": "warning",
+        "silk_edge_clearance": "ignore",
+        "silk_over_copper": "ignore",
+        "silk_overlap": "error",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
-        "text_height": "warning",
-        "text_thickness": "warning",
+        "text_height": "ignore",
+        "text_thickness": "ignore",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
-        "track_dangling": "warning",
+        "track_dangling": "error",
         "track_width": "error",
         "tracks_crossing": "error",
         "unconnected_items": "error",
-        "unresolved_variable": "error",
-        "via_dangling": "warning",
+        "unresolved_variable": "ignore",
+        "via_dangling": "error",
         "zones_intersect": "error"
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.09,
+        "min_clearance": 0.127,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.0,
-        "min_hole_clearance": 0.25,
-        "min_hole_to_hole": 0.5,
-        "min_microvia_diameter": 0.19999999999999998,
-        "min_microvia_drill": 0.09999999999999999,
+        "min_copper_edge_clearance": 0.508,
+        "min_hole_clearance": 0.254,
+        "min_hole_to_hole": 0.2032,
+        "min_microvia_diameter": 0.30479999999999996,
+        "min_microvia_drill": 0.1016,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.7999999999999999,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.09,
-        "min_via_annular_width": 0.13,
-        "min_via_diameter": 0.5,
+        "min_through_hole_diameter": 0.254,
+        "min_track_width": 0.127,
+        "min_via_annular_width": 0.1016,
+        "min_via_diameter": 0.508,
         "solder_mask_clearance": 0.0,
         "solder_mask_min_width": 0.0,
         "solder_mask_to_copper_clearance": 0.0,
@@ -180,30 +180,35 @@
       ],
       "track_widths": [
         0.0,
-        0.127
+        0.127,
+        0.1397,
+        0.2032,
+        0.3048,
+        0.6096,
+        1.2192
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
-          "corner_radius_percentage": 100,
+          "corner_radius_percentage": 80,
           "corner_style": 1,
           "max_amplitude": 1.0,
-          "min_amplitude": 0.1,
+          "min_amplitude": 0.2,
           "single_sided": false,
-          "spacing": 0.6
+          "spacing": 1.0
         },
         "diff_pair_skew_defaults": {
-          "corner_radius_percentage": 100,
+          "corner_radius_percentage": 80,
           "corner_style": 1,
           "max_amplitude": 1.0,
-          "min_amplitude": 0.1,
+          "min_amplitude": 0.2,
           "single_sided": false,
           "spacing": 0.6
         },
         "single_track_defaults": {
-          "corner_radius_percentage": 100,
+          "corner_radius_percentage": 80,
           "corner_style": 1,
           "max_amplitude": 1.0,
-          "min_amplitude": 0.1,
+          "min_amplitude": 0.2,
           "single_sided": false,
           "spacing": 0.6
         }
@@ -453,19 +458,87 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
-        "diff_pair_gap": 0.25,
+        "clearance": 0.127,
+        "diff_pair_gap": 0.0,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
+        "diff_pair_width": 0.0,
         "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
+        "microvia_diameter": 0.3048,
+        "microvia_drill": 0.1016,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.25,
-        "via_diameter": 0.8,
-        "via_drill": 0.4,
+        "track_width": 0.2032,
+        "via_diameter": 0.508,
+        "via_drill": 0.254,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.127,
+        "diff_pair_gap": 0.0,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.0,
+        "line_style": 0,
+        "microvia_diameter": 0.3048,
+        "microvia_drill": 0.1016,
+        "name": "Breakout",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.127,
+        "via_diameter": 0.508,
+        "via_drill": 0.254,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2032,
+        "diff_pair_gap": 0.127,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.127,
+        "line_style": 0,
+        "microvia_diameter": 0.3048,
+        "microvia_drill": 0.1016,
+        "name": "HDMI",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.127,
+        "via_diameter": 0.508,
+        "via_drill": 0.254,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2032,
+        "diff_pair_gap": 0.0,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.0,
+        "line_style": 0,
+        "microvia_diameter": 0.3048,
+        "microvia_drill": 0.1016,
+        "name": "PWR",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.3048,
+        "via_diameter": 0.508,
+        "via_drill": 0.254,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.127,
+        "diff_pair_gap": 0.127,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.1778,
+        "line_style": 0,
+        "microvia_diameter": 0.3048,
+        "microvia_drill": 0.1016,
+        "name": "USB",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.1778,
+        "via_diameter": 0.508,
+        "via_drill": 0.254,
         "wire_width": 6
       }
     ],
@@ -476,8 +549,116 @@
     "netclass_assignments": null,
     "netclass_patterns": [
       {
-        "netclass": "Default",
-        "pattern": "+3V3"
+        "netclass": "USB",
+        "pattern": "USB2_P1_DN"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "USB2_P1_DP"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "USB2_P2_DN"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "USB2_P2_DP"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "/USB/USB2_P1_L_DP"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "/USB/USB2_P1_L_DN"
+      },
+      {
+        "netclass": "HDMI",
+        "pattern": "/HDMI/HDMI_CLKP"
+      },
+      {
+        "netclass": "HDMI",
+        "pattern": "/HDMI/HDMI_CLKN"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "USB2_P3_DP"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "USB2_P3_DN"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "USB2_P4_DN"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "USB2_P4_DP"
+      },
+      {
+        "netclass": "HDMI",
+        "pattern": "/HDMI/HDMI_D2P"
+      },
+      {
+        "netclass": "HDMI",
+        "pattern": "/HDMI/HDMI_D2N"
+      },
+      {
+        "netclass": "HDMI",
+        "pattern": "/HDMI/HDMI_D1P"
+      },
+      {
+        "netclass": "HDMI",
+        "pattern": "/HDMI/HDMI_D1N"
+      },
+      {
+        "netclass": "HDMI",
+        "pattern": "/HDMI/HDMI_D0P"
+      },
+      {
+        "netclass": "HDMI",
+        "pattern": "/HDMI/HDMI_D0N"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "/USB/USB2_UPSTRM_R_DP"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "/USB/USB2_UPSTRM_R_DN"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "/USB/USB2_P2_L_DP"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "/USB/USB2_P2_L_DN"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "/USB/USB2_P3_L_DP"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "/USB/USB2_P3_L_DN"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "/USB/USB2_P4_L_DN"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "/USB/USB2_P4_L_DP"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "USB2_UP_DN"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "USB2_UP_DP"
       }
     ]
   },
