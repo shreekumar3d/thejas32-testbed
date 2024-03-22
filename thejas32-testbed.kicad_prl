@@ -12,7 +12,7 @@
       "pads": 1.0,
       "tracks": 1.0,
       "vias": 1.0,
-      "zones": 0.47999998927116394
+      "zones": 0.6700000166893005
     },
     "selection_filter": {
       "dimensions": true,
@@ -41,7 +41,6 @@
       12,
       13,
       15,
-      16,
       17,
       18,
       19,
@@ -61,10 +60,11 @@
       34,
       35,
       36,
+      37,
       39,
       40
     ],
-    "visible_layers": "c009000_fffffffd",
+    "visible_layers": "ffcfffd_7ffffffd",
     "zone_display_mode": 0
   },
   "git": {
