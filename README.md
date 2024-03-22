@@ -65,3 +65,12 @@ peripheral emulation, co-processing, etc.
 # Tools
 
 Based on KiCAD 8.
+
+# Checkout Instructions
+
+This project uses git submodules. To checkout everything, do:
+
+    git clone --recurse-submodules https://github.com/shreekumar3d/thejas32-testbed.git
+
+Raspberry Pi Pico footprint is a submodule.  If you don't go this, you'll not
+see the nice Pico in the 3D preview.
