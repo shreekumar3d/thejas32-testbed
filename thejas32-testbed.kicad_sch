@@ -10136,16 +10136,6 @@
 	)
 	(wire
 		(pts
-			(xy 350.52 198.12) (xy 328.93 198.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "36e82ee1-229b-4159-982e-2f7d785bfaf4")
-	)
-	(wire
-		(pts
 			(xy 307.34 360.68) (xy 307.34 340.36)
 		)
 		(stroke
@@ -13606,7 +13596,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 198.12) (xy 321.31 198.12)
+			(xy 246.38 198.12) (xy 350.52 198.12)
 		)
 		(stroke
 			(width 0)
@@ -17268,7 +17258,7 @@
 	)
 	(global_label "RPi_COMPAT_PWM1"
 		(shape input)
-		(at 307.34 284.48 0)
+		(at 307.34 289.56 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -17278,7 +17268,7 @@
 		)
 		(uuid "412170f5-863a-49e9-9508-bbbdfd6c0e5d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 328.1656 284.48 0)
+			(at 328.1656 289.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17488,7 +17478,7 @@
 	)
 	(global_label "RPi_COMPAT_PWM0_ALT"
 		(shape input)
-		(at 307.34 292.1 0)
+		(at 307.34 287.02 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -17498,7 +17488,7 @@
 		)
 		(uuid "4c67c271-535d-4ec7-a383-cb31a74c373c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 332.2175 292.1 0)
+			(at 332.2175 287.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18148,7 +18138,7 @@
 	)
 	(global_label "RPi_COMPAT_PWM0"
 		(shape input)
-		(at 307.34 289.56 0)
+		(at 307.34 284.48 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -18158,7 +18148,7 @@
 		)
 		(uuid "7be93c1b-9814-4d41-9345-5fe304f00d57")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 328.1656 289.56 0)
+			(at 328.1656 284.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19644,7 +19634,7 @@
 	)
 	(global_label "RPi_COMPAT_PWM1_ALT"
 		(shape input)
-		(at 307.34 287.02 0)
+		(at 307.34 292.1 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -19654,7 +19644,7 @@
 		)
 		(uuid "dc1ecb61-11e4-4b27-8cca-917c0f3d5a7f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 332.2175 287.02 0)
+			(at 332.2175 292.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21340,7 +21330,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_TopBottom"
 			(at 759.46 372.11 0)
 			(effects
 				(font
@@ -22464,7 +22454,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
+		(property "Footprint" "MountingHole:MountingHole_3mm_Pad_TopBottom"
 			(at 745.49 372.11 0)
 			(effects
 				(font
@@ -26201,7 +26191,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_TopBottom"
 			(at 772.16 372.11 0)
 			(effects
 				(font
@@ -28341,7 +28331,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_TopBottom"
 			(at 765.7385 371.9382 0)
 			(effects
 				(font
@@ -28668,7 +28658,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
+		(property "Footprint" "MountingHole:MountingHole_3mm_Pad_TopBottom"
 			(at 737.87 372.11 0)
 			(effects
 				(font
@@ -29301,73 +29291,6 @@
 			(project "thejas32-testbed"
 				(path "/012bf1cf-e3e3-4b01-8e23-6b37d758d0e3"
 					(reference "#PWR018")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Project-Specific:R_HandSolderable")
-		(at 325.12 198.12 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b83c3f8c-5a08-41b2-aa45-d419bf3d9445")
-		(property "Reference" "R27"
-			(at 325.12 198.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0E"
-			(at 325.374 200.152 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "project_lib:proj_R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 325.12 199.898 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 325.12 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 325.12 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "8d62a777-a187-4372-ae48-410ff44fab5f")
-		)
-		(pin "1"
-			(uuid "e167487e-ccbb-40fa-b7cb-b8b085d564b0")
-		)
-		(instances
-			(project "thejas32-testbed"
-				(path "/012bf1cf-e3e3-4b01-8e23-6b37d758d0e3"
-					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -32506,7 +32429,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
+		(property "Footprint" "MountingHole:MountingHole_3mm_Pad_TopBottom"
 			(at 753.11 372.11 0)
 			(effects
 				(font
