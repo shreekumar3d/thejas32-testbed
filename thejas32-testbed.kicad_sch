@@ -20469,7 +20469,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "100nF"
 			(at 27.94 162.56 0)
 			(effects
 				(font
@@ -20549,7 +20549,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "2.54 mm 1x5 pin male header"
 			(at 472.44 492.76 0)
 			(effects
 				(font
@@ -20636,7 +20636,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "100nF"
 			(at 54.61 219.71 0)
 			(effects
 				(font
@@ -20714,7 +20714,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "2.54 mm 1x10 pin male header"
 			(at 542.29 335.28 0)
 			(effects
 				(font
@@ -20881,7 +20881,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "100nF"
 			(at 81.28 290.83 0)
 			(effects
 				(font
@@ -20961,7 +20961,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "2.54 mm 1x3 pin male header"
 			(at 275.59 316.23 0)
 			(effects
 				(font
@@ -21042,7 +21042,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "10uF"
 			(at 39.37 167.64 0)
 			(effects
 				(font
@@ -21199,7 +21199,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "2.54 mm 1x5 pin male header"
 			(at 294.64 551.18 0)
 			(effects
 				(font
@@ -21286,7 +21286,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "100nF"
 			(at 101.6 243.84 0)
 			(effects
 				(font
@@ -21717,7 +21717,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "100nF"
 			(at 92.71 243.84 0)
 			(effects
 				(font
@@ -21812,7 +21812,7 @@
 		(at 754.38 532.13 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "210b83ac-6fd3-4508-90c1-291961807f9d")
@@ -22003,7 +22003,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "100nF"
 			(at 92.71 265.43 0)
 			(effects
 				(font
@@ -22081,7 +22081,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "100nF"
 			(at 82.55 243.84 0)
 			(effects
 				(font
@@ -22758,7 +22758,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "100nF"
 			(at 80.01 123.19 0)
 			(effects
 				(font
@@ -22836,7 +22836,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "100nF"
 			(at 100.33 290.83 0)
 			(effects
 				(font
@@ -22865,7 +22865,7 @@
 		(at 87.63 190.5 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "29e63c7c-8e9f-4d1c-bffc-a3fa0d47f97a")
@@ -22990,7 +22990,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "100nF"
 			(at 101.6 265.43 0)
 			(effects
 				(font
@@ -23134,7 +23134,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "100nF"
 			(at 93.98 219.71 0)
 			(effects
 				(font
@@ -23212,7 +23212,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "100nF"
 			(at 370.84 295.91 0)
 			(effects
 				(font
@@ -23290,7 +23290,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "2.54 mm 1x2 pin male header"
 			(at 576.58 213.36 0)
 			(effects
 				(font
@@ -23604,7 +23604,7 @@
 		(at 791.21 527.05 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "3c66e5ca-e64c-431a-ae18-353b51eb76cc")
@@ -23726,7 +23726,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "2.54 mm 2x5 pin male header"
 			(at 378.46 547.37 0)
 			(effects
 				(font
@@ -23830,7 +23830,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "2.54 mm 1x4 pin male header"
 			(at 643.89 313.69 0)
 			(effects
 				(font
@@ -23979,7 +23979,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "100nF"
 			(at 327.66 132.08 0)
 			(effects
 				(font
@@ -24008,7 +24008,7 @@
 		(at 797.56 527.05 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "3fa76664-d071-4e11-890a-11a5f197f501")
@@ -24132,7 +24132,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "2.54 mm 1x3 pin male header"
 			(at 566.42 303.53 0)
 			(effects
 				(font
@@ -24410,7 +24410,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "100nF"
 			(at 82.55 265.43 0)
 			(effects
 				(font
@@ -24637,7 +24637,7 @@
 		(at 745.49 532.13 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "47b22b3b-d2c1-400e-b993-87f25873a949")
@@ -24762,7 +24762,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "10uF"
 			(at 383.54 274.32 0)
 			(effects
 				(font
@@ -25101,7 +25101,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "100nF"
 			(at 288.29 132.08 0)
 			(effects
 				(font
@@ -25756,7 +25756,7 @@
 		(at 772.16 532.13 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "6c3a665f-d69f-4cab-84a0-e57f79ab9b75")
@@ -25958,7 +25958,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "10uF"
 			(at 64.77 219.71 0)
 			(effects
 				(font
@@ -26101,7 +26101,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "2.54 mm 1x2 pin male header"
 			(at 627.38 297.18 0)
 			(effects
 				(font
@@ -26256,7 +26256,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "10uF"
 			(at 344.17 274.32 0)
 			(effects
 				(font
@@ -26402,7 +26402,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "2.54 mm 1x3 pin male header"
 			(at 514.35 490.22 0)
 			(effects
 				(font
@@ -26805,7 +26805,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "100nF"
 			(at 71.12 123.19 0)
 			(effects
 				(font
@@ -27091,7 +27091,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "10uF"
 			(at 298.45 132.08 0)
 			(effects
 				(font
@@ -27120,7 +27120,7 @@
 		(at 767.08 532.13 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "784e5e88-ad48-4a9e-8357-a7c00c399597")
@@ -27517,7 +27517,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "100nF"
 			(at 60.96 123.19 0)
 			(effects
 				(font
@@ -27546,7 +27546,7 @@
 		(at 803.91 527.05 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "816ce19c-c170-4bb0-b1c2-9d1badf92728")
@@ -27800,7 +27800,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "10uF"
 			(at 83.82 219.71 0)
 			(effects
 				(font
@@ -28678,7 +28678,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "10uF"
 			(at 317.5 133.35 0)
 			(effects
 				(font
@@ -28756,7 +28756,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "100nF"
 			(at 120.65 290.83 0)
 			(effects
 				(font
@@ -28863,7 +28863,7 @@
 		(at 810.26 527.05 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "9e5d36aa-393f-4a89-b197-78545889f4c9")
@@ -28985,7 +28985,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "10uF"
 			(at 110.49 290.83 0)
 			(effects
 				(font
@@ -29063,7 +29063,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "2.54 mm 2x10 pin male header"
 			(at 382.27 500.38 0)
 			(effects
 				(font
@@ -29908,7 +29908,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "100nF"
 			(at 334.01 274.32 0)
 			(effects
 				(font
@@ -30131,7 +30131,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "100nF"
 			(at 373.38 274.32 0)
 			(effects
 				(font
@@ -30405,7 +30405,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "100nF"
 			(at 73.66 219.71 0)
 			(effects
 				(font
@@ -30559,7 +30559,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "100nF"
 			(at 307.34 132.08 0)
 			(effects
 				(font
@@ -31054,7 +31054,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "2.54 mm 1x2 pin male header"
 			(at 575.31 180.34 0)
 			(effects
 				(font
@@ -31208,7 +31208,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "2.54 mm 1x2 pin male header"
 			(at 516.89 172.72 0)
 			(effects
 				(font
@@ -31286,7 +31286,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "10uF"
 			(at 363.22 274.32 0)
 			(effects
 				(font
@@ -31494,7 +31494,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "10uF"
 			(at 104.14 219.71 0)
 			(effects
 				(font
@@ -32122,7 +32122,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "100nF"
 			(at 379.73 295.91 0)
 			(effects
 				(font
@@ -32199,7 +32199,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "2.54 mm 2x3 pin male header"
 			(at 281.94 487.68 0)
 			(effects
 				(font
@@ -32289,7 +32289,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "100nF"
 			(at 353.06 274.32 0)
 			(effects
 				(font
@@ -32367,7 +32367,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "10uF"
 			(at 337.82 132.08 0)
 			(effects
 				(font
@@ -32728,7 +32728,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "100nF"
 			(at 360.68 295.91 0)
 			(effects
 				(font
@@ -33247,7 +33247,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "10uF"
 			(at 91.44 290.83 0)
 			(effects
 				(font
@@ -33597,7 +33597,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "2.54 mm 2x20 pin male header"
 			(at 100.33 519.43 0)
 			(effects
 				(font
@@ -33789,7 +33789,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "10uF"
 			(at 130.81 290.83 0)
 			(effects
 				(font
