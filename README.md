@@ -23,8 +23,8 @@ and its ecosystem and make it usuable.
 THEJAS32 runs directly on an external clock, offering a single core 100
 MHz RISC-V CPU with a IO interfaces - UART, SPI, I2C, PWM and GPIOs.
 
-This board sets up THEJAS32 a test microcontroller, controlled by 1 Raspberry
-Pi Picos.  Some of the IO interfaces are routed to the Pico.  This opens
+This board sets up THEJAS32 a test microcontroller, controlled by a Raspberry
+Pi Pico.  Some of the IO interfaces are routed to the Pico.  This opens
 the door for many types of experimentation and learning, including clock
 control, timing, peripheral emulation, etc.
 
@@ -40,7 +40,7 @@ The board consists of a few main elements
 
 * THEJAS32 SoC
 * 2 MB flash (used by THEJAS32)
-* 1x Raspberry Pi Pico
+* Raspberry Pi Pico
 * 2x Mini 360 DC-DC power modules - one to generate core voltage of 1.2V, other for 3.3V
 
 Precise measurement of power draw of the THEJAS32 is also a goal of this board.
