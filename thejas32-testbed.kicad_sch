@@ -4,6 +4,9 @@
 	(generator_version "8.0")
 	(uuid "012bf1cf-e3e3-4b01-8e23-6b37d758d0e3")
 	(paper "A1")
+	(title_block
+		(title "THEJAS32 Testbed")
+	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
 			(pin_numbers hide)
@@ -15936,18 +15939,6 @@
 		)
 		(uuid "0f6a721c-112e-4478-92b9-99090401b70a")
 	)
-	(text "Aligned Mounting holes"
-		(exclude_from_sim no)
-		(at 744.474 64.516 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 30 34 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "11397287-3ab5-4e8f-8114-85ec6e6258c2")
-	)
 	(text "MCU_BOOT_UART can be used to program\nMCU using ZMODEM. Also boot messages,\nprintf, etc. This is uart1 of RP2040"
 		(exclude_from_sim no)
 		(at 531.876 325.882 0)
@@ -16012,18 +16003,6 @@
 			(justify left bottom)
 		)
 		(uuid "28e71a77-8a27-4fd1-98e5-399f750ebec8")
-	)
-	(text "Need to check of R4/R5 has any PU for I2C on Main RasPi. \nIf there, remove R4/R5"
-		(exclude_from_sim no)
-		(at 744.982 36.322 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 30 34 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "3621abe5-4b1f-4963-b604-755830c51557")
 	)
 	(text "THEJAS32 Core Circuit"
 		(exclude_from_sim no)
@@ -16267,18 +16246,6 @@
 		)
 		(uuid "815bc681-0f19-4bfe-ae6f-41e26ddc5266")
 	)
-	(text "When Powering through RasPi, remove JP1"
-		(exclude_from_sim no)
-		(at 744.982 44.958 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 30 34 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "874e6e8a-fbef-4115-97c2-dd36a0152b7d")
-	)
 	(text "The flash circuit is from the Raspberry\nPi Pico design. Larger dcap is 1005 in \nthat  design, with value 2.2uF"
 		(exclude_from_sim no)
 		(at 62.484 157.226 0)
@@ -16367,18 +16334,6 @@
 		)
 		(uuid "9db605de-c069-4d4b-bc01-651178c33d73")
 	)
-	(text "Change R2 to 100k for weak PD\n"
-		(exclude_from_sim no)
-		(at 744.728 26.924 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 30 34 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "ab6bf52c-cdf3-4f23-a099-25954f04d41a")
-	)
 	(text "Jumper     Meaning\n-------------------------------------------------------------\nJP3 JP4 |\n-------------------------------------------------------------\nY   Y   | 5V from USB connector is used for the entire board.\n        | Pico must not get power from host.\n        | Pico can be used as USB host.\n-------------------------------------------------------------\nN   Y   | 5V from USB connector is used for Thejas32 only.\n        | Pico must be powered using its USB connector.\n-------------------------------------------------------------\nY   N   | Single cable mode. USB connector is not used\n        | Pico must be powered using its USB connector\n        | This power is used to run Thejas32 also\n-------------------------------------------------------------"
 		(exclude_from_sim no)
 		(at 656.59 213.106 0)
@@ -16423,18 +16378,6 @@
 		)
 		(uuid "c37d55f3-8214-4ed8-816e-196fb29243ac")
 	)
-	(text "Need to add Properties like\nMPN\nManufacturer \nin properties for easier BOM creation"
-		(exclude_from_sim no)
-		(at 744.982 22.352 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 30 34 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "c6416df5-cd32-422c-b6e0-098c75b5c387")
-	)
 	(text "See layout instructions for decaps"
 		(exclude_from_sim no)
 		(at 54.864 118.364 0)
@@ -16475,18 +16418,6 @@
 			)
 		)
 		(uuid "c841adc0-c8f5-4d7e-9c68-95a7449a572f")
-	)
-	(text "DEbug UART 0 for master Pico is not conneted anywhere"
-		(exclude_from_sim no)
-		(at 744.982 41.148 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 30 34 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "c8bd128e-60f4-4e39-9bf3-5bc80c949424")
 	)
 	(text "See layout instructions for decaps"
 		(exclude_from_sim no)
@@ -16608,18 +16539,6 @@
 			(justify left)
 		)
 		(uuid "f6cbae10-35a3-4f9d-bf5f-970acc4e6573")
-	)
-	(text "Change R3 to 100k for weak PD\n"
-		(exclude_from_sim no)
-		(at 744.982 30.734 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 30 34 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "fc8049ea-e785-4c24-abc4-1fe11eee10c6")
 	)
 	(global_label "MCU_TST_MODE"
 		(shape input)
