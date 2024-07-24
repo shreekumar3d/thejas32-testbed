@@ -8342,10 +8342,22 @@
 		)
 	)
 	(junction
+		(at 373.38 510.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "030e6994-fb96-4a15-9722-94d0916850cc")
+	)
+	(junction
 		(at 92.71 240.03)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "04c1d5a3-6e3e-44fb-aec4-7afc991be89c")
+	)
+	(junction
+		(at 374.65 513.08)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "07207586-84b9-4ee0-b53b-75b693a6eb0b")
 	)
 	(junction
 		(at 177.8 247.65)
@@ -8460,12 +8472,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2fe92d31-635c-4321-aba5-f084b8376971")
-	)
-	(junction
-		(at 373.38 518.16)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "32ba025d-6b27-4a0e-8c65-3113f537475e")
 	)
 	(junction
 		(at 334.01 280.67)
@@ -9098,16 +9104,8 @@
 		(uuid "cadf848c-ec0b-4da0-be61-e7eb1b67995c")
 	)
 	(no_connect
-		(at 389.89 510.54)
-		(uuid "cdaeac2b-b87c-4d70-9c3f-6dbace652998")
-	)
-	(no_connect
 		(at 67.31 179.07)
 		(uuid "d3d55cae-a030-4927-a94f-1741ea9bd9d8")
-	)
-	(no_connect
-		(at 377.19 510.54)
-		(uuid "d9c2d190-dc4b-4147-8131-5a93a5384bc5")
 	)
 	(no_connect
 		(at 622.3 307.34)
@@ -10165,6 +10163,16 @@
 	)
 	(wire
 		(pts
+			(xy 322.58 556.26) (xy 322.58 557.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ca79163-bc91-43d6-9f14-10f5fa0d6288")
+	)
+	(wire
+		(pts
 			(xy 248.92 139.7) (xy 248.92 96.52)
 		)
 		(stroke
@@ -10925,6 +10933,16 @@
 	)
 	(wire
 		(pts
+			(xy 391.16 513.08) (xy 389.89 513.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "495af765-5f79-449c-b76e-80b0ad4e7762")
+	)
+	(wire
+		(pts
 			(xy 87.63 190.5) (xy 152.4 190.5)
 		)
 		(stroke
@@ -11332,6 +11350,16 @@
 			(type default)
 		)
 		(uuid "59e589e3-be4e-43b1-af57-026f673c3a47")
+	)
+	(wire
+		(pts
+			(xy 374.65 516.89) (xy 391.16 516.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59f8134f-1f06-4332-980b-ac21eae838a2")
 	)
 	(wire
 		(pts
@@ -12805,7 +12833,7 @@
 	)
 	(wire
 		(pts
-			(xy 392.43 518.16) (xy 392.43 513.08)
+			(xy 392.43 518.16) (xy 392.43 510.54)
 		)
 		(stroke
 			(width 0)
@@ -12995,7 +13023,7 @@
 	)
 	(wire
 		(pts
-			(xy 389.89 513.08) (xy 392.43 513.08)
+			(xy 389.89 510.54) (xy 392.43 510.54)
 		)
 		(stroke
 			(width 0)
@@ -13135,7 +13163,7 @@
 	)
 	(wire
 		(pts
-			(xy 373.38 513.08) (xy 373.38 518.16)
+			(xy 373.38 510.54) (xy 373.38 518.16)
 		)
 		(stroke
 			(width 0)
@@ -13405,6 +13433,16 @@
 	)
 	(wire
 		(pts
+			(xy 374.65 513.08) (xy 374.65 516.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4bea31b-3525-4834-a578-8768f267fa74")
+	)
+	(wire
+		(pts
 			(xy 107.95 521.97) (xy 121.92 521.97)
 		)
 		(stroke
@@ -13642,6 +13680,16 @@
 			(type default)
 		)
 		(uuid "af0592e5-7b88-4268-a948-fe88d572aa29")
+	)
+	(wire
+		(pts
+			(xy 369.57 513.08) (xy 374.65 513.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af23ad6a-56fb-4e89-9c8d-1f63945858c6")
 	)
 	(wire
 		(pts
@@ -14165,6 +14213,16 @@
 	)
 	(wire
 		(pts
+			(xy 323.85 556.26) (xy 322.58 556.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c048d229-d81c-4b37-b649-9e1bb526816d")
+	)
+	(wire
+		(pts
 			(xy 205.74 243.84) (xy 205.74 270.51)
 		)
 		(stroke
@@ -14315,7 +14373,7 @@
 	)
 	(wire
 		(pts
-			(xy 373.38 513.08) (xy 377.19 513.08)
+			(xy 373.38 510.54) (xy 377.19 510.54)
 		)
 		(stroke
 			(width 0)
@@ -14555,7 +14613,7 @@
 	)
 	(wire
 		(pts
-			(xy 367.03 518.16) (xy 373.38 518.16)
+			(xy 369.57 510.54) (xy 373.38 510.54)
 		)
 		(stroke
 			(width 0)
@@ -15555,6 +15613,16 @@
 	)
 	(wire
 		(pts
+			(xy 374.65 513.08) (xy 377.19 513.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f50a76f6-0cfd-4223-a26b-fd5fd3a81298")
+	)
+	(wire
+		(pts
 			(xy 73.66 223.52) (xy 73.66 227.33)
 		)
 		(stroke
@@ -15672,6 +15740,16 @@
 			(type default)
 		)
 		(uuid "fb9df346-a5a3-4f59-bfdf-743a2c2bcdea")
+	)
+	(wire
+		(pts
+			(xy 391.16 516.89) (xy 391.16 513.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbfc4b93-9541-4990-96d8-3ede95dc2e72")
 	)
 	(wire
 		(pts
@@ -17687,6 +17765,28 @@
 			)
 		)
 	)
+	(global_label "PWR_5V"
+		(shape input)
+		(at 369.57 513.08 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "45b38a7f-0fde-42e1-b6ec-942667180a7e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 359.3277 513.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "RPi_COMPAT_GPIO_16"
 		(shape input)
 		(at 121.92 539.75 0)
@@ -18149,6 +18249,28 @@
 			)
 		)
 	)
+	(global_label "MCU_TJTAG_TDI"
+		(shape input)
+		(at 323.85 548.64 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "68d6444d-ccb1-45ae-a3c1-b81cb8646842")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 306.7739 548.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "PWR_3V3"
 		(shape input)
 		(at 74.93 330.2 180)
@@ -18404,6 +18526,28 @@
 		(uuid "7fcbd70b-f1c1-4fae-ad59-b6d73982a497")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 247.2653 487.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "MCU_TJTAG_TCK"
+		(shape input)
+		(at 323.85 551.18 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8308d422-c964-4fc3-ab9e-0fd15d0855e5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 306.1087 551.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18789,7 +18933,7 @@
 	)
 	(global_label "PWR_3V3"
 		(shape input)
-		(at 367.03 518.16 180)
+		(at 369.57 510.54 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -18799,7 +18943,7 @@
 		)
 		(uuid "9d8bfcd4-2ff5-49bd-b35e-6b9410ddb704")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 355.5782 518.16 0)
+			(at 358.1182 510.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19073,6 +19217,28 @@
 			)
 		)
 	)
+	(global_label "MCU_TJTAG_TMS"
+		(shape input)
+		(at 323.85 546.1 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "aac27657-d99a-448a-aa66-a912e1dd06d4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 305.9878 546.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "MCU_PWM_7"
 		(shape input)
 		(at 567.69 350.52 180)
@@ -19240,6 +19406,28 @@
 		(uuid "b3b57522-d1b2-44f6-b165-cfe27362a6d6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 55.3743 534.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "MCU_TJTAG_TRST"
+		(shape input)
+		(at 323.85 553.72 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b3f32b9d-9e5b-4738-958d-68566f0350d9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 305.2016 553.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20577,6 +20765,95 @@
 			(project "thejas32-testbed"
 				(path "/012bf1cf-e3e3-4b01-8e23-6b37d758d0e3"
 					(reference "J9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x05")
+		(at 328.93 551.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "03f3381f-e8a5-43bb-a0f7-4de19d9da09c")
+		(property "Reference" "J5"
+			(at 331.47 549.9099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x05"
+			(at 331.47 552.4499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
+			(at 328.93 551.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 328.93 551.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 328.93 551.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "2.54 mm 1x5 pin male header"
+			(at 328.93 551.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "534a300c-da6e-44a9-9b23-a54fc62b3937")
+		)
+		(pin "2"
+			(uuid "c0362bef-46be-4a75-8ab6-6a02ead5d7b7")
+		)
+		(pin "3"
+			(uuid "bd5ecc93-3f29-4093-ae2a-3cf9db424904")
+		)
+		(pin "5"
+			(uuid "b2632af9-f670-40b7-b2e5-e3889c3eba4c")
+		)
+		(pin "4"
+			(uuid "ea459417-5fb3-46c1-b061-56f868ce0013")
+		)
+		(instances
+			(project "thejas32-testbed"
+				(path "/012bf1cf-e3e3-4b01-8e23-6b37d758d0e3"
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -27317,6 +27594,72 @@
 			(project "thejas32-testbed"
 				(path "/012bf1cf-e3e3-4b01-8e23-6b37d758d0e3"
 					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 322.58 557.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7afc3e35-259a-47d7-b43e-737ea8f17f50")
+		(property "Reference" "#PWR040"
+			(at 322.58 563.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 322.58 562.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 322.58 557.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 322.58 557.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 322.58 557.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cff3eda6-9b66-4838-b18a-25e33e8e43f8")
+		)
+		(instances
+			(project "thejas32-testbed"
+				(path "/012bf1cf-e3e3-4b01-8e23-6b37d758d0e3"
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
