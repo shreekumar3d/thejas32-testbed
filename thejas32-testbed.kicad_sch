@@ -20567,7 +20567,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Decoupling Capacitor nearest to power pin"
+		(property "Description" "100nF 104 0603 (1608 metric) 50V X7R MLCC"
 			(at 27.94 162.56 0)
 			(effects
 				(font
@@ -20576,7 +20576,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "100nF"
+		(property "MPN" "5190"
+			(at 27.94 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 27.94 162.56 0)
 			(effects
 				(font
@@ -20823,7 +20832,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Decoupling Capacitor nearest to power pin"
+		(property "Description" "100nF 104 0603 (1608 metric) 50V X7R MLCC"
 			(at 54.61 219.71 0)
 			(effects
 				(font
@@ -20832,7 +20841,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "100nF"
+		(property "MPN" "5190"
+			(at 54.61 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 54.61 219.71 0)
 			(effects
 				(font
@@ -21068,7 +21086,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Decoupling Capacitor nearest to power pin"
+		(property "Description" "100nF 104 0603 (1608 metric) 50V X7R MLCC"
 			(at 81.28 290.83 0)
 			(effects
 				(font
@@ -21077,7 +21095,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "100nF"
+		(property "MPN" "5190"
+			(at 81.28 290.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 81.28 290.83 0)
 			(effects
 				(font
@@ -21229,7 +21256,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Decoupling Capacitor farther from power pin"
+		(property "Description" "10uF 106 0603 (1608 metric) 50V X7R MLCC SMD"
 			(at 39.37 167.64 0)
 			(effects
 				(font
@@ -21238,7 +21265,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "10uF"
+		(property "MPN" "6799"
+			(at 39.37 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 39.37 167.64 0)
 			(effects
 				(font
@@ -21306,7 +21342,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "27R 1% 0603 (1608 metric)"
 			(at 302.26 193.04 0)
 			(effects
 				(font
@@ -21315,8 +21351,17 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "27E"
+		(property "MPN" "5297"
 			(at 302.26 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
+			(at 302.26 193.04 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21473,7 +21518,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Decoupling Capacitor nearest to power pin"
+		(property "Description" "100nF 104 0603 (1608 metric) 50V X7R MLCC"
 			(at 101.6 243.84 0)
 			(effects
 				(font
@@ -21482,7 +21527,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "100nF"
+		(property "MPN" "5190"
+			(at 101.6 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 101.6 243.84 0)
 			(effects
 				(font
@@ -21682,7 +21736,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "10E 1% 0603 (1608 metric)"
 			(at 104.14 177.8 0)
 			(effects
 				(font
@@ -21691,8 +21745,17 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "10E"
+		(property "MPN" "5354"
 			(at 104.14 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
+			(at 104.14 177.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21760,7 +21823,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "2K2 1% 0603 (1608 metric)"
 			(at 87.63 337.82 0)
 			(effects
 				(font
@@ -21769,7 +21832,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "2.2K"
+		(property "MPN" "6735"
+			(at 87.63 337.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 87.63 337.82 0)
 			(effects
 				(font
@@ -21904,7 +21976,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Decoupling Capacitor nearest to power pin"
+		(property "Description" "100nF 104 0603 (1608 metric) 50V X7R MLCC"
 			(at 92.71 243.84 0)
 			(effects
 				(font
@@ -21913,7 +21985,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "100nF"
+		(property "MPN" "5190"
+			(at 92.71 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 92.71 243.84 0)
 			(effects
 				(font
@@ -22190,7 +22271,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Decoupling Capacitor nearest to power pin"
+		(property "Description" "100nF 104 0603 (1608 metric) 50V X7R MLCC"
 			(at 92.71 265.43 0)
 			(effects
 				(font
@@ -22199,7 +22280,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "100nF"
+		(property "MPN" "5190"
+			(at 92.71 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 92.71 265.43 0)
 			(effects
 				(font
@@ -22268,7 +22358,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Decoupling Capacitor nearest to power pin"
+		(property "Description" "100nF 104 0603 (1608 metric) 50V X7R MLCC"
 			(at 82.55 243.84 0)
 			(effects
 				(font
@@ -22277,7 +22367,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "100nF"
+		(property "MPN" "5190"
+			(at 82.55 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 82.55 243.84 0)
 			(effects
 				(font
@@ -22402,7 +22501,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "DOCUMENTATION"
+		(property "Datasheet" "https://robu.in/product/thejas32-soc-based-microprocessor/"
 			(at 212.09 191.77 0)
 			(effects
 				(font
@@ -22411,7 +22510,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CDAC THEJAS32 100 MHz RISC-V Microcontroller LQFP128"
 			(at 212.09 191.77 0)
 			(effects
 				(font
@@ -22421,6 +22520,15 @@
 			)
 		)
 		(property "MPN" "THEJAS32"
+			(at 212.09 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "CDAC"
 			(at 212.09 191.77 0)
 			(effects
 				(font
@@ -22867,7 +22975,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "10K 1% 0603 (1608 metric)"
 			(at 586.74 543.56 0)
 			(effects
 				(font
@@ -22876,7 +22984,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "10K"
+		(property "MPN" "5192"
+			(at 586.74 543.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 586.74 543.56 0)
 			(effects
 				(font
@@ -22945,7 +23062,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Decoupling Capacitor nearest to power pin"
+		(property "Description" "100nF 104 0603 (1608 metric) 50V X7R MLCC"
 			(at 80.01 123.19 0)
 			(effects
 				(font
@@ -22954,7 +23071,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "100nF"
+		(property "MPN" "5190"
+			(at 80.01 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 80.01 123.19 0)
 			(effects
 				(font
@@ -23023,7 +23149,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Decoupling Capacitor nearest to power pin"
+		(property "Description" "100nF 104 0603 (1608 metric) 50V X7R MLCC"
 			(at 100.33 290.83 0)
 			(effects
 				(font
@@ -23032,7 +23158,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "100nF"
+		(property "MPN" "5190"
+			(at 100.33 290.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 100.33 290.83 0)
 			(effects
 				(font
@@ -23177,7 +23312,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Decoupling Capacitor nearest to power pin"
+		(property "Description" "100nF 104 0603 (1608 metric) 50V X7R MLCC"
 			(at 101.6 265.43 0)
 			(effects
 				(font
@@ -23186,7 +23321,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "100nF"
+		(property "MPN" "5190"
+			(at 101.6 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 101.6 265.43 0)
 			(effects
 				(font
@@ -23321,7 +23465,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Decoupling Capacitor nearest to power pin"
+		(property "Description" "100nF 104 0603 (1608 metric) 50V X7R MLCC"
 			(at 93.98 219.71 0)
 			(effects
 				(font
@@ -23330,7 +23474,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "100nF"
+		(property "MPN" "5190"
+			(at 93.98 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 93.98 219.71 0)
 			(effects
 				(font
@@ -23399,7 +23552,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Decoupling Capacitor nearest to power pin"
+		(property "Description" "100nF 104 0603 (1608 metric) 50V X7R MLCC"
 			(at 370.84 295.91 0)
 			(effects
 				(font
@@ -23408,7 +23561,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "100nF"
+		(property "MPN" "5190"
+			(at 370.84 295.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 370.84 295.91 0)
 			(effects
 				(font
@@ -23554,7 +23716,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "27R 1% 0603 (1608 metric)"
 			(at 302.26 190.5 0)
 			(effects
 				(font
@@ -23563,8 +23725,17 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "27E"
+		(property "MPN" "5297"
 			(at 302.26 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
+			(at 302.26 190.5 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23631,7 +23802,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "27R 1% 0603 (1608 metric)"
 			(at 302.26 195.58 0)
 			(effects
 				(font
@@ -23640,8 +23811,17 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "27E"
+		(property "MPN" "5297"
 			(at 302.26 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
+			(at 302.26 195.58 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24166,7 +24346,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Decoupling Capacitor nearest to power pin"
+		(property "Description" "100nF 104 0603 (1608 metric) 50V X7R MLCC"
 			(at 327.66 132.08 0)
 			(effects
 				(font
@@ -24175,7 +24355,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "100nF"
+		(property "MPN" "5190"
+			(at 327.66 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 327.66 132.08 0)
 			(effects
 				(font
@@ -24597,7 +24786,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Decoupling Capacitor nearest to power pin"
+		(property "Description" "100nF 104 0603 (1608 metric) 50V X7R MLCC"
 			(at 82.55 265.43 0)
 			(effects
 				(font
@@ -24606,7 +24795,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "100nF"
+		(property "MPN" "5190"
+			(at 82.55 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 82.55 265.43 0)
 			(effects
 				(font
@@ -24949,7 +25147,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Decoupling Capacitor farther from power pin"
+		(property "Description" "10uF 106 0603 (1608 metric) 50V X7R MLCC SMD"
 			(at 383.54 274.32 0)
 			(effects
 				(font
@@ -24958,7 +25156,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "10uF"
+		(property "MPN" "6799"
+			(at 383.54 274.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 383.54 274.32 0)
 			(effects
 				(font
@@ -25288,7 +25495,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Decoupling Capacitor nearest to power pin"
+		(property "Description" "100nF 104 0603 (1608 metric) 50V X7R MLCC"
 			(at 288.29 132.08 0)
 			(effects
 				(font
@@ -25297,7 +25504,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "100nF"
+		(property "MPN" "5190"
+			(at 288.29 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 288.29 132.08 0)
 			(effects
 				(font
@@ -25431,7 +25647,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "27R 1% 0603 (1608 metric)"
 			(at 302.26 185.42 0)
 			(effects
 				(font
@@ -25440,8 +25656,17 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "27E"
+		(property "MPN" "5297"
 			(at 302.26 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
+			(at 302.26 185.42 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25705,7 +25930,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "27R 1% 0603 (1608 metric)"
 			(at 325.12 210.82 0)
 			(effects
 				(font
@@ -25714,8 +25939,17 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "27E"
+		(property "MPN" "5297"
 			(at 325.12 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
+			(at 325.12 210.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25782,7 +26016,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "27R 1% 0603 (1608 metric)"
 			(at 302.26 187.96 0)
 			(effects
 				(font
@@ -25791,8 +26025,17 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "27E"
+		(property "MPN" "5297"
 			(at 302.26 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
+			(at 302.26 187.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26067,7 +26310,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "27R 1% 0603 (1608 metric)"
 			(at 302.26 198.12 0)
 			(effects
 				(font
@@ -26076,8 +26319,17 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "27E"
+		(property "MPN" "5297"
 			(at 302.26 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
+			(at 302.26 198.12 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26145,7 +26397,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Decoupling Capacitor farther from power pin"
+		(property "Description" "10uF 106 0603 (1608 metric) 50V X7R MLCC SMD"
 			(at 64.77 219.71 0)
 			(effects
 				(font
@@ -26154,7 +26406,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "10uF"
+		(property "MPN" "6799"
+			(at 64.77 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 64.77 219.71 0)
 			(effects
 				(font
@@ -26365,7 +26626,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "27R 1% 0603 (1608 metric)"
 			(at 356.87 170.18 0)
 			(effects
 				(font
@@ -26374,8 +26635,17 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "27E"
+		(property "MPN" "5297"
 			(at 356.87 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
+			(at 356.87 170.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26443,7 +26713,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Decoupling Capacitor farther from power pin"
+		(property "Description" "10uF 106 0603 (1608 metric) 50V X7R MLCC SMD"
 			(at 344.17 274.32 0)
 			(effects
 				(font
@@ -26452,7 +26722,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "10uF"
+		(property "MPN" "6799"
+			(at 344.17 274.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 344.17 274.32 0)
 			(effects
 				(font
@@ -26669,7 +26948,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "27R 1% 0603 (1608 metric)"
 			(at 327.66 91.44 0)
 			(effects
 				(font
@@ -26678,8 +26957,17 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "27E"
+		(property "MPN" "5297"
 			(at 327.66 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
+			(at 327.66 91.44 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26758,6 +27046,15 @@
 			)
 		)
 		(property "MPN" "W25Q16JVSSIQ"
+			(at 57.15 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Winbond"
 			(at 57.15 176.53 0)
 			(effects
 				(font
@@ -26899,7 +27196,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://robu.in/product/mini-360-step-down-buck-converter-power-module/"
 			(at 546.1 210.82 0)
 			(effects
 				(font
@@ -26908,7 +27205,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mini360 Step Down Buck Converter"
 			(at 546.1 210.82 0)
 			(effects
 				(font
@@ -26917,7 +27214,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "Mini360"
+		(property "MPN" "790469"
+			(at 546.1 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Robu"
 			(at 546.1 210.82 0)
 			(effects
 				(font
@@ -26992,7 +27298,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Decoupling Capacitor nearest to power pin"
+		(property "Description" "100nF 104 0603 (1608 metric) 50V X7R MLCC"
 			(at 71.12 123.19 0)
 			(effects
 				(font
@@ -27001,7 +27307,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "100nF"
+		(property "MPN" "5190"
+			(at 71.12 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 71.12 123.19 0)
 			(effects
 				(font
@@ -27070,7 +27385,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "2K2 1% 0603 (1608 metric)"
 			(at 82.55 337.82 0)
 			(effects
 				(font
@@ -27079,7 +27394,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "2.2K"
+		(property "MPN" "6735"
+			(at 82.55 337.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 82.55 337.82 0)
 			(effects
 				(font
@@ -27278,7 +27602,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Decoupling Capacitor farther from power pin"
+		(property "Description" "10uF 106 0603 (1608 metric) 50V X7R MLCC SMD"
 			(at 298.45 132.08 0)
 			(effects
 				(font
@@ -27287,7 +27611,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "10uF"
+		(property "MPN" "6799"
+			(at 298.45 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 298.45 132.08 0)
 			(effects
 				(font
@@ -27627,7 +27960,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "10E 1% 0603 (1608 metric)"
 			(at 95.25 317.5 0)
 			(effects
 				(font
@@ -27636,8 +27969,17 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "10E"
+		(property "MPN" "5354"
 			(at 95.25 317.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
+			(at 95.25 317.5 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27770,7 +28112,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Decoupling Capacitor nearest to power pin"
+		(property "Description" "100nF 104 0603 (1608 metric) 50V X7R MLCC"
 			(at 60.96 123.19 0)
 			(effects
 				(font
@@ -27779,7 +28121,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "100nF"
+		(property "MPN" "5190"
+			(at 60.96 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 60.96 123.19 0)
 			(effects
 				(font
@@ -28053,7 +28404,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Decoupling Capacitor farther from power pin"
+		(property "Description" "10uF 106 0603 (1608 metric) 50V X7R MLCC SMD"
 			(at 83.82 219.71 0)
 			(effects
 				(font
@@ -28062,7 +28413,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "10uF"
+		(property "MPN" "6799"
+			(at 83.82 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 83.82 219.71 0)
 			(effects
 				(font
@@ -28723,7 +29083,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "10K 1% 0603 (1608 metric)"
 			(at 645.16 543.56 0)
 			(effects
 				(font
@@ -28732,7 +29092,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "10K"
+		(property "MPN" "5192"
+			(at 645.16 543.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 645.16 543.56 0)
 			(effects
 				(font
@@ -28931,7 +29300,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Decoupling Capacitor farther from power pin"
+		(property "Description" "10uF 106 0603 (1608 metric) 50V X7R MLCC SMD"
 			(at 317.5 133.35 0)
 			(effects
 				(font
@@ -28940,7 +29309,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "10uF"
+		(property "MPN" "6799"
+			(at 317.5 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 317.5 133.35 0)
 			(effects
 				(font
@@ -29009,7 +29387,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Decoupling Capacitor nearest to power pin"
+		(property "Description" "100nF 104 0603 (1608 metric) 50V X7R MLCC"
 			(at 120.65 290.83 0)
 			(effects
 				(font
@@ -29018,7 +29396,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "100nF"
+		(property "MPN" "5190"
+			(at 120.65 290.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 120.65 290.83 0)
 			(effects
 				(font
@@ -29087,7 +29474,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "2K2 1% 0603 (1608 metric)"
 			(at 419.1 132.08 0)
 			(effects
 				(font
@@ -29096,7 +29483,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "2.2K"
+		(property "MPN" "6735"
+			(at 419.1 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 419.1 132.08 0)
 			(effects
 				(font
@@ -29238,7 +29634,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Decoupling Capacitor farther from power pin"
+		(property "Description" "10uF 106 0603 (1608 metric) 50V X7R MLCC SMD"
 			(at 110.49 290.83 0)
 			(effects
 				(font
@@ -29247,7 +29643,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "10uF"
+		(property "MPN" "6799"
+			(at 110.49 290.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 110.49 290.83 0)
 			(effects
 				(font
@@ -29448,7 +29853,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "10K 1% 0603 (1608 metric)"
 			(at 198.12 383.54 0)
 			(effects
 				(font
@@ -29457,7 +29862,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "10K"
+		(property "MPN" "5192"
+			(at 198.12 383.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 198.12 383.54 0)
 			(effects
 				(font
@@ -29525,7 +29939,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Raspberry Pi Pico"
 			(at 604.52 328.93 0)
 			(effects
 				(font
@@ -29535,6 +29949,15 @@
 			)
 		)
 		(property "MPN" "Raspberry Pi Pico"
+			(at 604.52 328.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Raspberry Pi"
 			(at 604.52 328.93 0)
 			(effects
 				(font
@@ -29726,7 +30149,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "10K 1% 0603 (1608 metric)"
 			(at 586.74 518.16 0)
 			(effects
 				(font
@@ -29735,7 +30158,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "10K"
+		(property "MPN" "5192"
+			(at 586.74 518.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 586.74 518.16 0)
 			(effects
 				(font
@@ -29794,7 +30226,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://robu.in/product/mini-360-step-down-buck-converter-power-module/"
 			(at 546.1 177.8 0)
 			(effects
 				(font
@@ -29803,7 +30235,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mini360 Step Down Buck Converter"
 			(at 546.1 177.8 0)
 			(effects
 				(font
@@ -29812,7 +30244,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "Mini360"
+		(property "MPN" "790469"
+			(at 546.1 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Robu"
 			(at 546.1 177.8 0)
 			(effects
 				(font
@@ -29885,7 +30326,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "27R 1% 0603 (1608 metric)"
 			(at 325.12 208.28 0)
 			(effects
 				(font
@@ -29894,8 +30335,17 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "27E"
+		(property "MPN" "5297"
 			(at 325.12 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
+			(at 325.12 208.28 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30161,7 +30611,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Decoupling Capacitor nearest to power pin"
+		(property "Description" "100nF 104 0603 (1608 metric) 50V X7R MLCC"
 			(at 334.01 274.32 0)
 			(effects
 				(font
@@ -30170,7 +30620,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "100nF"
+		(property "MPN" "5190"
+			(at 334.01 274.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 334.01 274.32 0)
 			(effects
 				(font
@@ -30240,7 +30699,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "2K2 1% 0603 (1608 metric)"
 			(at 231.14 358.14 0)
 			(effects
 				(font
@@ -30249,7 +30708,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "2.2K"
+		(property "MPN" "6735"
+			(at 231.14 358.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 231.14 358.14 0)
 			(effects
 				(font
@@ -30384,7 +30852,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Decoupling Capacitor nearest to power pin"
+		(property "Description" "100nF 104 0603 (1608 metric) 50V X7R MLCC"
 			(at 373.38 274.32 0)
 			(effects
 				(font
@@ -30393,7 +30861,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "100nF"
+		(property "MPN" "5190"
+			(at 373.38 274.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 373.38 274.32 0)
 			(effects
 				(font
@@ -30658,7 +31135,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Decoupling Capacitor nearest to power pin"
+		(property "Description" "100nF 104 0603 (1608 metric) 50V X7R MLCC"
 			(at 73.66 219.71 0)
 			(effects
 				(font
@@ -30667,7 +31144,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "100nF"
+		(property "MPN" "5190"
+			(at 73.66 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 73.66 219.71 0)
 			(effects
 				(font
@@ -30734,7 +31220,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "27R 1% 0603 (1608 metric)"
 			(at 302.26 182.88 0)
 			(effects
 				(font
@@ -30743,8 +31229,17 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "27E"
+		(property "MPN" "5297"
 			(at 302.26 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
+			(at 302.26 182.88 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30812,7 +31307,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Decoupling Capacitor nearest to power pin"
+		(property "Description" "100nF 104 0603 (1608 metric) 50V X7R MLCC"
 			(at 307.34 132.08 0)
 			(effects
 				(font
@@ -30821,7 +31316,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "100nF"
+		(property "MPN" "5190"
+			(at 307.34 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 307.34 132.08 0)
 			(effects
 				(font
@@ -30890,7 +31394,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "10K 1% 0603 (1608 metric)"
 			(at 645.16 518.16 0)
 			(effects
 				(font
@@ -30899,7 +31403,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "10K"
+		(property "MPN" "5192"
+			(at 645.16 518.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 645.16 518.16 0)
 			(effects
 				(font
@@ -31163,7 +31676,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "27R 1% 0603 (1608 metric)"
 			(at 264.16 341.63 0)
 			(effects
 				(font
@@ -31172,8 +31685,17 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "27E"
+		(property "MPN" "5297"
 			(at 264.16 341.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
+			(at 264.16 341.63 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31383,7 +31905,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "27R 1% 0603 (1608 metric)"
 			(at 327.66 88.9 0)
 			(effects
 				(font
@@ -31392,8 +31914,17 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "27E"
+		(property "MPN" "5297"
 			(at 327.66 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
+			(at 327.66 88.9 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31539,7 +32070,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Decoupling Capacitor farther from power pin"
+		(property "Description" "10uF 106 0603 (1608 metric) 50V X7R MLCC SMD"
 			(at 363.22 274.32 0)
 			(effects
 				(font
@@ -31548,7 +32079,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "10uF"
+		(property "MPN" "6799"
+			(at 363.22 274.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 363.22 274.32 0)
 			(effects
 				(font
@@ -31747,7 +32287,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Decoupling Capacitor farther from power pin"
+		(property "Description" "10uF 106 0603 (1608 metric) 50V X7R MLCC SMD"
 			(at 104.14 219.71 0)
 			(effects
 				(font
@@ -31756,7 +32296,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "10uF"
+		(property "MPN" "6799"
+			(at 104.14 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 104.14 219.71 0)
 			(effects
 				(font
@@ -31891,7 +32440,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "2K2 1% 0603 (1608 metric)"
 			(at 226.06 358.14 0)
 			(effects
 				(font
@@ -31900,7 +32449,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "2.2K"
+		(property "MPN" "6735"
+			(at 226.06 358.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 226.06 358.14 0)
 			(effects
 				(font
@@ -32231,7 +32789,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "2K2 1% 0603 (1608 metric)"
 			(at 414.02 132.08 0)
 			(effects
 				(font
@@ -32240,7 +32798,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "2.2K"
+		(property "MPN" "6735"
+			(at 414.02 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 414.02 132.08 0)
 			(effects
 				(font
@@ -32375,7 +32942,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Decoupling Capacitor nearest to power pin"
+		(property "Description" "100nF 104 0603 (1608 metric) 50V X7R MLCC"
 			(at 379.73 295.91 0)
 			(effects
 				(font
@@ -32384,7 +32951,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "100nF"
+		(property "MPN" "5190"
+			(at 379.73 295.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 379.73 295.91 0)
 			(effects
 				(font
@@ -32542,7 +33118,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Decoupling Capacitor nearest to power pin"
+		(property "Description" "100nF 104 0603 (1608 metric) 50V X7R MLCC"
 			(at 353.06 274.32 0)
 			(effects
 				(font
@@ -32551,7 +33127,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "100nF"
+		(property "MPN" "5190"
+			(at 353.06 274.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 353.06 274.32 0)
 			(effects
 				(font
@@ -32620,7 +33205,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Decoupling Capacitor farther from power pin"
+		(property "Description" "10uF 106 0603 (1608 metric) 50V X7R MLCC SMD"
 			(at 337.82 132.08 0)
 			(effects
 				(font
@@ -32629,7 +33214,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "10uF"
+		(property "MPN" "6799"
+			(at 337.82 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 337.82 132.08 0)
 			(effects
 				(font
@@ -32762,7 +33356,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "27R 1% 0603 (1608 metric)"
 			(at 356.87 165.1 0)
 			(effects
 				(font
@@ -32771,8 +33365,17 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "27E"
+		(property "MPN" "5297"
 			(at 356.87 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
+			(at 356.87 165.1 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32838,7 +33441,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "27R 1% 0603 (1608 metric)"
 			(at 302.26 200.66 0)
 			(effects
 				(font
@@ -32847,8 +33450,17 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "27E"
+		(property "MPN" "5297"
 			(at 302.26 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
+			(at 302.26 200.66 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32981,7 +33593,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Decoupling Capacitor nearest to power pin"
+		(property "Description" "100nF 104 0603 (1608 metric) 50V X7R MLCC"
 			(at 360.68 295.91 0)
 			(effects
 				(font
@@ -32990,7 +33602,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "100nF"
+		(property "MPN" "5190"
+			(at 360.68 295.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 360.68 295.91 0)
 			(effects
 				(font
@@ -33050,7 +33671,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.sunrom.com/p/microusb-connector-with-through-hole-support-legs"
 			(at 505.46 179.07 0)
 			(effects
 				(font
@@ -33059,7 +33680,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "USB Micro Type B connector"
+		(property "Description" "MicroUSB Connector with through hole support Legs"
 			(at 501.65 177.8 0)
 			(effects
 				(font
@@ -33068,7 +33689,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "4653"
+			(at 501.65 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 501.65 177.8 0)
 			(effects
 				(font
@@ -33149,7 +33779,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "10K 1% 0603 (1608 metric)"
 			(at 615.95 518.16 0)
 			(effects
 				(font
@@ -33158,7 +33788,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "10K"
+		(property "MPN" "5192"
+			(at 615.95 518.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 615.95 518.16 0)
 			(effects
 				(font
@@ -33422,7 +34061,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "27R 1% 0603 (1608 metric)"
 			(at 327.66 93.98 0)
 			(effects
 				(font
@@ -33431,8 +34070,17 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "27E"
+		(property "MPN" "5297"
 			(at 327.66 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
+			(at 327.66 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33500,7 +34148,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Decoupling Capacitor farther from power pin"
+		(property "Description" "10uF 106 0603 (1608 metric) 50V X7R MLCC SMD"
 			(at 91.44 290.83 0)
 			(effects
 				(font
@@ -33509,7 +34157,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "10uF"
+		(property "MPN" "6799"
+			(at 91.44 290.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 91.44 290.83 0)
 			(effects
 				(font
@@ -33576,7 +34233,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "27R 1% 0603 (1608 metric)"
 			(at 264.16 336.55 0)
 			(effects
 				(font
@@ -33585,8 +34242,17 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "27E"
+		(property "MPN" "5297"
 			(at 264.16 336.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
+			(at 264.16 336.55 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34042,7 +34708,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Decoupling Capacitor farther from power pin"
+		(property "Description" "10uF 106 0603 (1608 metric) 50V X7R MLCC SMD"
 			(at 130.81 290.83 0)
 			(effects
 				(font
@@ -34051,7 +34717,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "10uF"
+		(property "MPN" "6799"
+			(at 130.81 290.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 130.81 290.83 0)
 			(effects
 				(font
@@ -34120,7 +34795,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "10K 1% 0603 (1608 metric)"
 			(at 615.95 543.56 0)
 			(effects
 				(font
@@ -34129,7 +34804,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "10K"
+		(property "MPN" "5192"
+			(at 615.95 543.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sunrom"
 			(at 615.95 543.56 0)
 			(effects
 				(font
