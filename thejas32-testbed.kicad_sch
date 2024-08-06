@@ -33041,7 +33041,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_USB:USB_Micro-B_Wuerth_629105150521_CircularHoles"
+		(property "Footprint" "Connector_USB:USB_Micro-B_Molex-105017-0001"
 			(at 505.46 179.07 0)
 			(effects
 				(font
