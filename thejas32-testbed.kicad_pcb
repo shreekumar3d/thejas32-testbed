@@ -8685,11 +8685,11 @@
 	(footprint "Connector_USB:USB_Micro-B_Molex-105017-0001"
 		(layer "F.Cu")
 		(uuid "809a1d60-f9e9-48a3-a019-757fcae82630")
-		(at 119.9588 119.496105 -90)
+		(at 119.9588 119.5 -90)
 		(descr "http://www.molex.com/pdm_docs/sd/1050170001_sd.pdf")
 		(tags "Micro-USB SMD Typ-B")
 		(property "Reference" "J2"
-			(at 0 -3.1125 -90)
+			(at 0 -3.1125 90)
 			(layer "F.SilkS")
 			(uuid "061e7190-6af6-45a5-9dff-8345b6c9f610")
 			(effects
@@ -8700,7 +8700,7 @@
 			)
 		)
 		(property "Value" "USB_B_Micro"
-			(at 0.3 4.3375 -90)
+			(at 0.3 4.3375 90)
 			(layer "F.Fab")
 			(uuid "722671e6-c59a-4b0b-bc14-c2c3348699ec")
 			(effects
@@ -8988,7 +8988,7 @@
 			(uuid "4436ddb7-beeb-46fd-b1ad-b52338690490")
 		)
 		(fp_text user "PCB Edge"
-			(at 0 2.6875 -90)
+			(at 0 2.6875 90)
 			(layer "Dwgs.User")
 			(uuid "7c9422d4-a907-4f86-a07e-f92f153e7d81")
 			(effects
@@ -8999,7 +8999,7 @@
 			)
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0.8875 -90)
+			(at 0 0.8875 90)
 			(layer "F.Fab")
 			(uuid "3c79ccbd-bb90-4810-b537-05d26b5fb6f4")
 			(effects
@@ -9143,6 +9143,17 @@
 			)
 			(rotate
 				(xyz 0 0 0)
+			)
+		)
+		(model "${KIPRJMOD}/3dmodels/1050170001.stp"
+			(offset
+				(xyz 0 -1 1.1)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
 			)
 		)
 	)
