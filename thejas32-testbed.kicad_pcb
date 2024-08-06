@@ -29065,7 +29065,7 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "GPIO22"
+	(gr_text "GP22"
 		(at 133.2 124.2 90)
 		(layer "F.SilkS")
 		(uuid "6c78fd94-c4b0-4984-9211-7d844f75bee4")
@@ -29305,8 +29305,8 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "ADC"
-		(at 130.6 124.3 90)
+	(gr_text "GP28"
+		(at 131.388653 124.233651 90)
 		(layer "F.SilkS")
 		(uuid "c8a1a962-8cbb-46b0-bcd1-fb9776d95481")
 		(effects
