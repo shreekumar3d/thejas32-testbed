@@ -1,0 +1,9 @@
+Primary Design:
+  - Shree Kumar <shree.shree@gmail.com>
+
+Hardware Design Reviews, Routing and Assembly Guidance:
+  - Atharva Upadhye
+
+Hardware Footprints/Symbols:
+  - Raspberry Pi Pico : https://github.com/ncarandini/KiCad-RP-Pico
+  - Mini360 DC DC Step Down Converter : https://github.com/rayvburn/KiCad

@@ -1,8 +1,0 @@
-This file contains a list of people who have made contributions to
-this project.
-
-Primary Design:
-  Shree Kumar <shree.shree@gmail.com>
-
-Hardware Design Reviews, Routing and Assembly Guidance:
-  Atharva Upadhye
