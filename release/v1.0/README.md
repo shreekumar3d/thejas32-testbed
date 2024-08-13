@@ -12,3 +12,7 @@ manufacturing gerbers are in the corresponding directory.
 
 The first batch is 10 boards. $30.90 for boards, $35.20 for shipping, totalling
 $66.10.
+
+![Top View](jlcpcb/pcb-top-view.png)
+
+![Bottom View](jlcpcb/pcb-bottom-view.png)
