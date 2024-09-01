@@ -40,8 +40,8 @@ int main()
     // Wait for CDC initialization - refer CMakeLists.txt for maximum
     // wait time.
     stdio_init_all();
-    printf("\nAtiVEGA ready\n");
-    printf("This is the power on test of THEJAS32.\n");
+    printf("\n=========================================================\n");
+    printf("AtiVEGA ready to power-on THEJAS32\n");
 
     // Keep THEJAS32 in reset. The board has a pull down resistor,
     // so strictly speaking this is not required at this time.
@@ -84,12 +84,13 @@ int main()
     uint sys_clk_rate = clock_get_hz(clk_sys);
     uint baud = (sys_clk_rate/T_CLK_DIV)/(16*32);
     uint baud_achieved = uart_init(BOOT_UART_ID, baud);
-    printf("Communicating with THEJAS32 at UART baud=%d (requested: %d)\n", baud_achieved, baud);
+    printf("Communicating with THEJAS32 at UART baud=%d\n",baud_achieved);
+    printf("                              (requested:%d)\n",baud);
     gpio_set_function(T_BOOT_UART_TX_PIN, UART_FUNCSEL_NUM(BOOT_UART_ID, T_BOOT_UART_TX_PIN));
     gpio_set_function(T_BOOT_UART_RX_PIN, UART_FUNCSEL_NUM(BOOT_UART_ID, T_BOOT_UART_RX_PIN));
 
     uint thejas_clk_rate = sys_clk_rate/T_CLK_DIV;
-    printf("Powering on THEJAS32 with clock=%d Hz _after_ three seconds!\n",thejas_clk_rate);
+    printf("Powering on with clock=%d Hz _after_ 3 seconds!\n",thejas_clk_rate);
     printf("THEJAS32's boot log will follow after the next line\n");
     printf("=========================================================\n");
     // wait for all the prints to finish - USB can take some time! This is here to avoid
@@ -99,11 +100,11 @@ int main()
 
     // build some suspense - 3...2...1... go!
     for(int i=3;i>=0;i--) {
-	if(i>0) {
-	    printf("\r%d...",i);
+        if(i>0) {
+            printf("\r%d...",i);
             sleep_ms(1000);
-	} else {
-	    // erase previous prints
+        } else {
+            // erase previous prints
             printf("\r    \r");
         }
         uart_default_tx_wait_blocking();
@@ -116,35 +117,46 @@ int main()
     gpio_put(T_RESETN_PIN, 1);
 
     absolute_time_t t_start = get_absolute_time();
-    // Dump everything that comes on UART to USB
+    absolute_time_t t_first_ch;
     int prev_ch = -1;
     int prev2_ch = -1;
     bool ready = false;
-    absolute_time_t t_first_ch;
+    // Dump everything that comes on UART to USB
     while(1) {
         if(uart_is_readable(BOOT_UART_ID)) {
-	    if(prev_ch==-1) {
+            if(prev_ch==-1) {
                 t_first_ch = get_absolute_time();
             }
-	    int ch = uart_getc(BOOT_UART_ID);
-	    if((!ready) &&
-               (ch=='C') && (prev2_ch==13) && (prev_ch==32)) {
-                absolute_time_t t_ready = get_absolute_time();
-		printf("\n\n==> Ready to receive image %lld microseconds after power on.\n",
-                       absolute_time_diff_us(t_start, t_ready));
-		printf("==> First char was received %lld microseconds after power on.\n\n",
-                       absolute_time_diff_us(t_start, t_first_ch));
-		ready = true;
-	    }
-	    printf("%c",ch);
 
-	    // Toggle LED
-	    led_state ^= 1;
-	    gpio_put(PICO_LED, led_state);
+            int ch = uart_getc(BOOT_UART_ID);
+            // In UART boot mode, THEJAS32 uses the XMODEM with CRC as the
+            // protocol to upload software. Those 'C' characters indicate
+            // that THEJAS32 is ready to receive a software image to boot.
+            // We need to track the first of these, but we need to ignore
+            // occurences of 'C' that happen in the header. The 'C' indicating
+            // "send image" is preceded by a space and a newline. That's
+            // how we differentiate
+            if((!ready) &&
+                   (ch=='C') && (prev2_ch==13) && (prev_ch==32)) {
+                    absolute_time_t t_ready = get_absolute_time();
+                printf(
+                    "\n\n==> Ready to receive image %lld microseconds after power on.\n",
+                     absolute_time_diff_us(t_start, t_ready));
+                printf("==> First char was received %lld microseconds after power on.\n\n",
+                     absolute_time_diff_us(t_start, t_first_ch));
+                ready = true;
+            }
 
-	    prev2_ch = prev_ch;
-	    prev_ch = ch;
-	}
+            // dump the data from THEJAS32 to USB
+            printf("%c",ch);
+
+            // Toggle LED
+            led_state ^= 1;
+            gpio_put(PICO_LED, led_state);
+
+            prev2_ch = prev_ch;
+            prev_ch = ch;
+        }
     }
 
     return 0;
