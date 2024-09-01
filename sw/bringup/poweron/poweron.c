@@ -25,6 +25,8 @@ const uint8_t BOOT_MODE_UART = 1;
 // relative to system clock (100 MHz)
 const int T_CLK_DIV = 1;
 
+uint8_t led_state = 1;
+
 int main()
 {
     // System clock is already running at 100 MHz at this point
@@ -33,7 +35,7 @@ int main()
     // Turn on the Pico LED - this is the only LED on the entire board!
     gpio_init(PICO_LED);
     gpio_set_dir(PICO_LED, GPIO_OUT);
-    gpio_put(PICO_LED, 1);
+    gpio_put(PICO_LED, led_state);
 
     // Wait for CDC initialization - refer CMakeLists.txt for maximum
     // wait time.
@@ -135,6 +137,11 @@ int main()
 		ready = true;
 	    }
 	    printf("%c",ch);
+
+	    // Toggle LED
+	    led_state ^= 1;
+	    gpio_put(PICO_LED, led_state);
+
 	    prev2_ch = prev_ch;
 	    prev_ch = ch;
 	}
