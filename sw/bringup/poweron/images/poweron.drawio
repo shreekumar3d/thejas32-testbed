@@ -1,0 +1,151 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:129.0) Gecko/20100101 Firefox/129.0" version="24.7.8">
+  <diagram name="Page-1" id="90a13364-a465-7bf4-72fc-28e22215d7a0">
+    <mxGraphModel dx="1160" dy="674" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="1169" pageHeight="826" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" style=";html=1;" />
+        <mxCell id="1" style=";html=1;" parent="0" />
+        <mxCell id="RBv-ePs52zasYLE-lzvq-28" value="" style="whiteSpace=wrap;html=1;shadow=1;fontSize=18;fillColor=#d5e8d4;strokeColor=#82b366;align=left;" parent="1" vertex="1">
+          <mxGeometry x="480" y="380" width="520" height="450" as="geometry" />
+        </mxCell>
+        <mxCell id="3a17f1ce550125da-2" value="THEJAS32" style="whiteSpace=wrap;html=1;shadow=1;fontSize=18;fillColor=#647687;strokeColor=#314354;fontColor=#ffffff;" parent="1" vertex="1">
+          <mxGeometry x="787" y="450" width="170" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="3a17f1ce550125da-20" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;startArrow=none;startFill=0;jettySize=auto;orthogonalLoop=1;fontSize=18;elbow=vertical;exitX=1;exitY=0.288;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="RBv-ePs52zasYLE-lzvq-7" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="757" y="505" />
+            </Array>
+            <mxPoint x="660" y="505" as="sourcePoint" />
+            <mxPoint x="787" y="505" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RBv-ePs52zasYLE-lzvq-1" value="&lt;div style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;DC-DC&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Module&lt;/font&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;shadow=1;fontSize=18;fillColor=#bac8d3;strokeColor=#23445d;" parent="1" vertex="1">
+          <mxGeometry x="791" y="720" width="64" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="RBv-ePs52zasYLE-lzvq-2" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.212;entryY=1.011;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" source="RBv-ePs52zasYLE-lzvq-1" target="3a17f1ce550125da-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="810" y="362" as="sourcePoint" />
+            <mxPoint x="810" y="452" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RBv-ePs52zasYLE-lzvq-3" value="&lt;div&gt;Core&lt;/div&gt;&lt;div&gt;1.2V&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF0000;" parent="1" vertex="1">
+          <mxGeometry x="786" y="683" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RBv-ePs52zasYLE-lzvq-5" value="&lt;div&gt;IO&lt;/div&gt;&lt;div&gt;3.3V&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF0000;" parent="1" vertex="1">
+          <mxGeometry x="919" y="684" width="34" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RBv-ePs52zasYLE-lzvq-8" value="CLK" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="746" y="482" width="35" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RBv-ePs52zasYLE-lzvq-10" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;startArrow=none;startFill=0;jettySize=auto;orthogonalLoop=1;fontSize=18;elbow=vertical;exitX=1;exitY=0.156;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="RBv-ePs52zasYLE-lzvq-7" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="757" y="478" />
+            </Array>
+            <mxPoint x="660" y="480" as="sourcePoint" />
+            <mxPoint x="787" y="478" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RBv-ePs52zasYLE-lzvq-11" value="~RESET" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="726" y="456" width="58" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RBv-ePs52zasYLE-lzvq-13" value="BOOT_SELECT" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="689" y="511" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RBv-ePs52zasYLE-lzvq-14" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;startArrow=none;startFill=0;jettySize=auto;orthogonalLoop=1;fontSize=18;elbow=vertical;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="650" y="620" as="sourcePoint" />
+            <mxPoint x="789" y="619" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RBv-ePs52zasYLE-lzvq-15" value="BOOT_UART_RX" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF8000;" parent="1" vertex="1">
+          <mxGeometry x="676" y="593" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RBv-ePs52zasYLE-lzvq-16" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;startArrow=none;startFill=0;jettySize=auto;orthogonalLoop=1;fontSize=18;elbow=vertical;endArrow=classic;endFill=1;exitX=0.006;exitY=0.632;exitDx=0;exitDy=0;exitPerimeter=0;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="680" y="591" />
+            </Array>
+            <mxPoint x="788.02" y="591.96" as="sourcePoint" />
+            <mxPoint x="650" y="591" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RBv-ePs52zasYLE-lzvq-17" value="BOOT_UART_TX" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF8000;" parent="1" vertex="1">
+          <mxGeometry x="674" y="565" width="101" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RBv-ePs52zasYLE-lzvq-18" value="&lt;div style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;DC-DC&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Module&lt;/font&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;shadow=1;fontSize=18;fillColor=#bac8d3;strokeColor=#23445d;" parent="1" vertex="1">
+          <mxGeometry x="890" y="720" width="64" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="RBv-ePs52zasYLE-lzvq-19" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;USB Connector&lt;/font&gt;" style="whiteSpace=wrap;html=1;shadow=1;fontSize=18;fillColor=#f5f5f5;strokeColor=#666666;" parent="1" vertex="1">
+          <mxGeometry x="553" y="381" width="64" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="RBv-ePs52zasYLE-lzvq-20" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.212;entryY=1.011;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="918" y="720" as="sourcePoint" />
+            <mxPoint x="918" y="642" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RBv-ePs52zasYLE-lzvq-21" style="edgeStyle=elbowEdgeStyle;rounded=0;html=1;startArrow=none;startFill=0;jettySize=auto;orthogonalLoop=1;fontSize=18;elbow=vertical;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="758" y="536" />
+            </Array>
+            <mxPoint x="650" y="536" as="sourcePoint" />
+            <mxPoint x="788" y="536" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RBv-ePs52zasYLE-lzvq-22" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.312;exitY=1.016;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" target="RBv-ePs52zasYLE-lzvq-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="589.3120000000001" y="643.04" as="sourcePoint" />
+            <mxPoint x="818" y="800" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="588" y="800" />
+              <mxPoint x="823" y="800" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RBv-ePs52zasYLE-lzvq-24" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.312;exitY=1.016;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.456;entryY=1.016;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" target="RBv-ePs52zasYLE-lzvq-18" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="589.3120000000001" y="643.04" as="sourcePoint" />
+            <mxPoint x="823" y="770" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="588" y="800" />
+              <mxPoint x="920" y="800" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RBv-ePs52zasYLE-lzvq-25" value="&lt;div&gt;5V&lt;br&gt;&lt;/div&gt;&lt;div&gt;USB&lt;/div&gt;&lt;div&gt;VBUS&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF0000;" parent="1" vertex="1">
+          <mxGeometry x="600" y="749" width="33" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="RBv-ePs52zasYLE-lzvq-26" value="Host Computer" style="whiteSpace=wrap;html=1;shadow=1;fontSize=18;fillColor=#fad7ac;strokeColor=#b46504;" parent="1" vertex="1">
+          <mxGeometry x="522" y="266" width="438" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="RBv-ePs52zasYLE-lzvq-27" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.143;exitY=0.997;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="RBv-ePs52zasYLE-lzvq-26" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="582.6500000000001" y="355.18999999999994" as="sourcePoint" />
+            <mxPoint x="585" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RBv-ePs52zasYLE-lzvq-29" value="&lt;div&gt;XMODEM+CRC&lt;/div&gt;&lt;div&gt;Protocol&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF8000;" parent="1" vertex="1">
+          <mxGeometry x="685" y="630" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RBv-ePs52zasYLE-lzvq-7" value="RPi Pico" style="whiteSpace=wrap;html=1;shadow=1;fontSize=18;fillColor=#6d8764;strokeColor=#3A5431;fontColor=#ffffff;" parent="1" vertex="1">
+          <mxGeometry x="522" y="410" width="126" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="RBv-ePs52zasYLE-lzvq-31" value="GPIO15" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="592" y="463" width="58" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RBv-ePs52zasYLE-lzvq-32" value="GPOUT GPIO21" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="546" y="490" width="108" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RBv-ePs52zasYLE-lzvq-33" value="GPIO20" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="590" y="522" width="58" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RBv-ePs52zasYLE-lzvq-34" value="&lt;font style=&quot;font-size: 32px;&quot; data-font-src=&quot;https://fonts.googleapis.com/css?family=Audiowide&quot; face=&quot;Audiowide&quot;&gt;AtiVEGA&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;fontSize=27;" parent="1" vertex="1">
+          <mxGeometry x="844" y="388" width="144" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
