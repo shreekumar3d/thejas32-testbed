@@ -4,7 +4,9 @@
 #include "autobaud.h"
 
 #define BOOT_DELAY 80 // millisecond reference for 100 MHz
-#define BASE_CLK_RATE 100*1000*1000
+#define BASE_CLK_RATE 100*1000*1000LL
+#define C_DELAY_MIN 0.1f // min wait in "CCCCC" state of XMODEM protocol
+#define C_DELAY_MAX 0.25f // max wait in "CCCCC" state of XMODEM protocol
 static PIO pio = pio0;
 static uint offset;
 static uint sm;
@@ -46,10 +48,10 @@ int autodetect_baud_rate(uint sys_clk_rate, int T_CLK_DIV)
     pio_sm_set_enabled(pio, sm, false); // stop program
     pio_sm_set_enabled(pio, sm, true); // start program
 
-    int total_delay = (((BOOT_DELAY*T_CLK_DIV*(BASE_CLK_RATE/1000))/(sys_clk_rate/1000))/1000)+1;
+    uint total_delay = (((BOOT_DELAY*T_CLK_DIV*(BASE_CLK_RATE/1000))/(sys_clk_rate/1000))/1000)+1;
     printf("Waiting for initial phase - %d sec...\n",total_delay);
     // give time for the initial CDAC prints phase to pass
-    for(int i=0;i<total_delay;i++) {
+    for(uint i=0;i<total_delay;i++) {
         sleep_ms(1000);
 	printf("%4d\r",i);
     }
@@ -63,18 +65,16 @@ int autodetect_baud_rate(uint sys_clk_rate, int T_CLK_DIV)
     }
     //printf("State length %u\n",count); // debug print
 
+    uint delay_min = sys_clk_rate*C_DELAY_MIN;
+    uint delay_max = sys_clk_rate*C_DELAY_MAX;
     while(1) {
             // count is in units of system clock cycles, roughly
             if(!get_bit_span(&count, T_CLK_DIV)) {
               printf("Baud rate detect failed - 2\n");
-              //return 0;
-	      continue;
+              return 0;
 	    }
-	    uint count_div_100 = count/100;
-	    //printf("State length %u\n", count); // debug print
-	    uint delay_min = ((150*(BASE_CLK_RATE/1000))/(sys_clk_rate/1000))*1000;
-	    uint delay_max = ((250*(BASE_CLK_RATE/1000))/(sys_clk_rate/1000))*1000;
-	    if((count_div_100>delay_min)&&(count_div_100<delay_max)) { // pulse 150<ms<200?
+	    //printf("clk=%u State length %u, range=%u to %lu\n", sys_clk_rate, count, delay_min, delay_max); // debug print
+	    if((count>delay_min)&&(count<delay_max)) { // pulse 150<ms<200?
 	        // next is stop bit
                 if(!get_bit_span(&count, T_CLK_DIV)) {
                   printf("Baud rate detect failed - 3\n");
