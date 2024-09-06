@@ -1,0 +1,70 @@
+.program measure
+
+/*
+  Measures high & low pulses on a single GPIO line.
+
+  Program requires:
+  1. 1 input pin, configured as JMP input
+  1. Autopush 32 configuration
+ 
+  Assumes that the line is low initially. Even otherwise,
+  no harm would be done I think.
+*/
+start:
+
+    // At this point, pin is low
+    // Measure low pulse
+
+    mov x, ~null              // Init counter to highest value
+wait_for_high:
+    jmp pin, low_to_high      // Get out of loop if pin goes high
+    jmp x--, wait_for_high    // Decrement counter, continue loop
+low_to_high:
+    in x, 32                  // Shift out count into ISR for CPU to pickup
+
+    // At this point, pin is high
+    // Measure high pulse
+
+    mov x, ~null              // Init counter to highest value
+wait_for_low:
+    jmp pin, is_high          // Keep inside the loop if pin is high
+is_low:
+    in x, 32                  // Shift out count into ISR for CPU to pickup
+    jmp start                 // Measure low pulse again
+is_high:
+    jmp x--, wait_for_low     // Decrement counter, continue loop
+
+/*
+
+Notes:
+  1. The output 32 bit counters are inverse values.  So, a value
+     of 0xfffff0 means the actual count is 0xf 
+  2. The jmp x-- loops have a very large timeout. 4G counts of system
+     clock !
+  3. The actual counts are representative values - not exact counts.
+     The PIO does not look at the PIN state for a few instructions
+     after it detects a transition.  Also, at best, during the loop,
+     it looks at the PIN state once every two instructions.
+
+*/
+
+/*
+  Companion C code
+*/
+% c-sdk {
+// Setuo GPIOs, and configures the SM to do specific things on a specific pins
+
+void measure_program_init(PIO pio, uint sm, uint offset, uint pin) {
+   pio_sm_set_consecutive_pindirs(pio, sm, pin, 1, false); // we use 1 pin, it's an input
+   pio_gpio_init(pio, pin);
+
+   pio_sm_config c = measure_program_get_default_config(offset);
+   sm_config_set_jmp_pin(&c, pin); // use the pin as the source for JMP instruction
+   sm_config_set_in_shift(&c, true, true, 32); // autopush - gets bits into fifo as soon as 32 get in.
+
+   // We only need RX, so get an 8-deep FIFO!
+   sm_config_set_fifo_join(&c, PIO_FIFO_JOIN_RX);
+
+   pio_sm_init(pio, sm, offset, &c);
+}
+%}
