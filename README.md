@@ -1,10 +1,8 @@
 # Status
 
-WIP : This project is work in progress. This line will be removed at
-an appropriate time.  Till then, read very carefully :)
+We're at v1.0, and the board is being tested out.
 
-The schematics and layout is almost complete, board fabrication is the next
-step after final checks and updates.
+Do look at the respective directories for hardware and software.
 
 #  Intro
 
@@ -26,8 +24,16 @@ MHz RISC-V CPU with a IO interfaces - UART, SPI, I2C, PWM and GPIOs.
 This board sets up THEJAS32 a test microcontroller, controlled by a Raspberry
 Pi Pico.  Some of the IO interfaces are routed to the Pico.  This opens
 the door for many types of experimentation and learning, including clock
-control, timing, peripheral emulation, etc.  A brief background and intro to the
-board is in [this presentation at ChennaiFOSS 2024 conference](https://www.youtube.com/watch?v=wljsP2YMgHc) (video, 25 minutes).
+control, timing, peripheral emulation, etc.  
+
+Useful background and goals for this board are well covered in my [recent talk
+at IndiaFOSS 2024](https://youtu.be/-m1KqcOkT5M?t=6345) (video, 25 mins). There
+is also a [AtiVEGA hackaday project](https://hackaday.io/project/197724-ativega) page.
+Look at hackaday for updates, what's going on in the project, etc.
+
+A somewhat detailed background and intro to the
+board is also in [this presentation at ChennaiFOSS 2024 conference](https://www.youtube.com/watch?v=wljsP2YMgHc)
+(video, 25 minutes) that I gave earlier this year.
 
 ![PCB Top View](images/pcb-top-view.png)
 
