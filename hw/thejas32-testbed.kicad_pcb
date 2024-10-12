@@ -9245,17 +9245,6 @@
 			(pintype "passive")
 			(uuid "ffe5fc87-2b8a-4fa7-996b-f3b42117091e")
 		)
-		(model "${KICAD8_3DMODEL_DIR}/Connector_USB.3dshapes/USB_Micro-B_Molex-105017-0001.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
 		(model "${KIPRJMOD}/3dmodels/1050170001.stp"
 			(offset
 				(xyz 0 -1 1.1)
