@@ -9245,12 +9245,12 @@
 			(pintype "passive")
 			(uuid "ffe5fc87-2b8a-4fa7-996b-f3b42117091e")
 		)
-		(model "${KIPRJMOD}/3dmodels/1050170001.stp"
+		(model "${KIPRJMOD}/3dmodels/1050170001.wrl"
 			(offset
 				(xyz 0 -1 1.1)
 			)
 			(scale
-				(xyz 1 1 1)
+				(xyz 0.3937 0.3937 0.3937)
 			)
 			(rotate
 				(xyz -90 0 0)
