@@ -1,0 +1,53 @@
+# All values are in mm, unless explicitly
+# stated otherwise
+#
+# Please see documentation for meaning of "gap",
+# "overlap", and "perimeter"
+#
+
+[pcb]
+thickness = 1.8 # First rev built at JLCPCB. The say thickness can go upto
+                # 1.78 mm for 1.6mm boards.
+tesellate_edge_cuts_curve = 0.1
+
+# pcb holder is the overall jig generated
+#
+# It has a slot for the PCB to sit, with "lips"
+#
+[pcb_holder]
+# gap
+# JLC says +- 0.2mm board dimension difference, so we add 0.1 extra regular
+# this gives us effectively 0.4mm. The printer can be off by +-0.1 mm as
+# well, # so we use 0.3 mm
+gap = 0.3
+# overlap
+# this is where the PCB will sit.  0.5 mm from the ideal PCB dimensions.
+# could be increased a bit, but watch out for any components close to the
+# edge. 0.5 mm is chosen as it is slightly lower that PCB manufacturer
+# specified board # edge to copper clearance.
+overlap = 0.5
+perimeter = 1.6 # 1.6mm thick walls
+base_perimeter_height = 2 # this length is additional to the base
+lip_size = 15 # goes way beyond the through holes at the edge of the board
+forced_lips = [] # not needed, rectangular PCB will generate corner supports
+
+# For each through hole component (ref), the jig
+# generator creates a "shell" that serves as a component
+# holder for the ref in its exact location on the board
+[component_holder]
+shell_clearance = 1.0 # 1.0 clearance gap between PCB top side and shell plastic
+shell_gap = 0.1 # components will fit in well
+shell_thickness = 0.8 # 2 nozzle wide shell, good enough for this application
+
+# Generic properties around component refs
+[refs]
+do_not_process = []
+process_only_these = []
+
+[jig_options]
+style = "soldering_helper"
+base_thickness = 1.0 # Z height of base
+base_style = "mesh"
+
+[base_mesh]
+line_width = 1.6 # 4 nozzle width wide lines, just me checking lower limits!
