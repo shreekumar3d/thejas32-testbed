@@ -1,60 +1,439 @@
-# All values are in mm, unless explicitly
-# stated otherwise
-#
-# Please see documentation for meaning of "gap",
-# "overlap", and "perimeter"
-#
 
+# All dimensions are specified in millimeters
+#
+# Please see documentation for meaning of "gap", "overlap", and "perimeter"
+#
 [pcb]
 thickness = 1.6
 tesellate_edge_cuts_curve = 0.1
 
-# pcb holder is the overall jig generated
+[holder]
+# PCB holder holds both the PCB and components in place, in proper alignment
+# This allows the user to use both hands while soldering, achieving the
+# highest quality results.
+
+# PCB rests at the top of the PCB holder. "pcb_overlap" decides how much
+# plastic will be under the PCB on its edges, supporting it on the holder.
+# A small overlap is enough to ensure that the PCB won't fall into the jig.
+pcb_overlap = 0.3
+
+# PCBs have an xy dimension accuracy of manufacturing, which shall be
+# specified by the manufacturer. Beyond that, you also need to consider the
+# printing accuracy of the 3D printer. "pcb_gap" ensures the PCB can be
+# placed in the jig comfortably, without flexing the jig in any dimension.
+pcb_gap = 0.3
+
+# Drawings on the EdgeCuts layer provide the PCB outline. At every vertex
+# on the PCB outline, a "groove" is created, to hold the PCB. Lips are created
+# at these points:
+#  - start end points of lines
+#  - corners of rectangles
+#  - start, mid and end points of arcs
+#  - north, east, west, south points on circles
+#  - each vertex on a polygon
 #
-# It has a slot for the PCB to sit, with "lips"
+# grooves are generated only on the external edge of the PCB, i.e. they are not
+# generated on interior drawings such as holes.
 #
-# Lips are typically created around the mounting
-# holes on the PCB. Most PCBs are a rounded
-# rectangle, or a rectangle.
+# Use 0 to enforce a groove along the entire PCB edge
 #
-# FIXME: This was used as heurestic before we had
-# proper edge cuts processing. Now we can create
-# it on every edge point
-#
-[pcb_holder]
-gap = 0.3
-overlap = 0.3
-perimeter = 1.6
-base_perimeter_height = 2 # this length is additional to the base
-forced_lips = [
+groove_size = 15
+
+# In some cases, you may want to force addition of grooves at specific points.
+#Use this. Note groove will be centerd on this point.
+forced_grooves = [
   #  [ X, Y ] coordinates from KiCAD PCB
 ]
-lip_size = 15
 
-# For each through hole component (ref), the jig
-# generator creates a "shell" that serves as a component
-# holder for the ref in its exact location on the board
-[component_holder]
-shell_clearance = 1
-shell_gap = 0.1
-shell_thickness = 0.8
+# Holder will have a solid border around the edge points of the PCB. This
+# provides rigidity to the jig structure.
+perimeter = 1.6
 
-# Generic properties around component refs
-[refs]
-do_not_process = [
+[holder.base]
+# Holder has a base. The base provides structural rigidity, and can be
+# used for purposes such as annotation.
+
+# Type of the base can be
+# - "mesh". This is a sparse structure built of thick lines. This helps
+#   reduce plastic usage, and can reduce print time. This also improves
+#   visibility of components when they are placed in the jig.
+# - "griddish". A sparse grid like structure made of thick lines. This
+#   gives good support to base of shells, and provides visibility from
+#   bottom of the jig. Probably takes slightly more material than mesh,
+#   but may creates a regular, somewhat 3D printer friendly pattern.
+# - "solid". A flat plate. More space for annotation.
+type = "mesh"
+
+# Thickness of the base. Higher value will improve rigidity in the
+# xy dimension (apart from the grooves)
+thickness = 0.0
+
+# A "perimeter" can be added on top of the base. This also improves the
+# rigidity of the structure.
+#
+# Note that this dimension is additional to the base thickness.
+perimeter_height = 1
+
+# Lines of the mesh are generated with this width. Best to use at-least 4
+# times your nozzle thickness, if 3D printing. Thicker lines will use
+# more material and increase printing time.
+line_width = 1.6
+
+# Height of the lines. If the base is solid, and height > thickness of the
+# base, then they will protrude above the base.  In many cases, you can
+# consider a thin base with lines providing extra structural strength
+line_height = 0.0
+
+[TH]
+# Parameters for Through Hole processing
+
+refs_do_not_process = [
   # list of refs that we should ignore
 ]
-process_only_these = [
+refs_process_only_these = [
   # list of refs to process
   # this takes precedence over "do_not_process"
-  # technically the two should be exclusive
+  # this is exclusive with do_not_process
+#  'U1', 'J12', 'J10', 'J6', 'J4',
+#  'J3', 'J5', 'J13', 'JP2', 'U4'
   'J12'
 ]
 
-[jig_options]
-style = "component_shell"
-base_thickness = 0.2 # Z height of base
-base_style = "mesh" # see documentation for other choices
+[TH.component_shell]
+# Around each through hole component (ref), the jig generator creates a "shell"
+# that serves as a component holder at its exact location on the board.
 
-[base_mesh]
-line_width = 1.6
+# shell can have one of a few types
+# - wiggle    => A shape that gives a bit of wiggle room for the component,
+#                when inserted into the shell. Depending on the exact shape of
+#                the component, it may be possible to rock/shake the component
+#                around.
+# - fitting   => multiple outlines, like a "step well". Each level helps hold
+#                the component in place, thus reducing wiggle room
+# - tight     => step-well of concave hulls. Provides the tightest fit, but
+#                also requires the most accuracy in dimensions and printing
+# - courtyard => the "courtyard" of the component is used as the shape of the
+#                shell. In almost all cases, this will allow the component
+#                to move around freely in the shell. This is potentially
+#                useful in two cases:
+#                  - components that you mount on the PCB directly, rather
+#                    than in the shell
+#                  - With insertion_direction="bottom" (see below), this
+#                    gives ample room to push in the component
+#
+# "tight" is not implemented yet, and isn't treated valid right now.
+shell_type = "fitting"
+
+# component will typically be inserted from the top side (w.r.t # the PCB, and
+# the jig). However, they can also be inserted from the bottom of the jig.
+# bottom insertion means that base will have a hole to allow the component to
+# be inserted. The shell type is forced to "outline" in this case.
+# valid values : "top" or "bottom"
+insertion_direction = "top"
+
+# Shells are basically a skin of plastic around the component, of this
+# minimum thickness along the Z axis.
+shell_thickness = 0.8
+
+# You a small xy gap for each component to slide into the shell, and it must
+# ideally sit snug without moving. Component sizes have tolerance. So does
+# you 3D. Consider both to set this up.
+
+#
+# 0.25 mm was found cleanly avoid flexing of a 2x20 header
+# 0.3 mm was loose
+# 0.2 mm caused a slight bow, and smaller values caused noticeable flex
+# along the long axis
+shell_gap = 0.25
+
+# If you have SMD components on the board, you may need a gap between the
+# shells and the PCB. The gap ensures SMD components don't touch the shells.
+#
+# Think of this as a vertical "keep-out" distance between the PCB and the
+# shells
+shell_clearance_from_pcb = 1
+
+# Force footprints to SMD
+force_smd = false
+
+[SMD]
+# Parameters for SMD components
+
+# Shells must not touch SMD components. It is better to have a small clearance
+# SMD keepout volume is it's courtyard extended along the height of the
+# component, extended by "clearance_from_shells"
+clearance_from_shells = 0.5
+
+# "gap" is similar to clearance but in XY direction
+# Courtyard is typically well outside the pads, so 0.5 mm is a good enough
+# default. Soldered components will stay well within this.
+gap_from_shells = 0.5
+
+[footprint]
+# Every component on the board has a footprint, which in turn is associated
+# with 3D models, pads, courtyard, etc
+#
+# Shells for each TH component are generated from the footprint. Shell
+# parameters are inherited from TH.component_shell to each footprint type.
+# Kicad footprints have long names, including the library, e.g
+# 'TestPoint:TestPoint_Pad_1.0x1.0mm'. These aren't valid 'identifiers',
+# and the '.' can be troublesome in toml.  In an automatic method, these
+# will need to be transformed to be valid. This will also make them a bit
+# harder to read. E.g. TestPoint__TestPoint_Pad_1p0x1p0mm'
+# Here, we allow aliases to make it easier.  If "pretty names" are given, they
+# will be used. If not, alias will be used. If that too isn't available,
+# then automatically generated names will be used.
+# e.g.
+#
+# [footprint.SinglePinBergHeader] # SinglePinBergHeader is the 'alias'
+#
+# kicad_footprint = 'TestPoint:TestPoint_Pad_1.0x1.0mm'
+# display_name = 'Single Pin Berg Header'
+# shell_type = "fitting"
+# shell_gap = 0.1
+# shell_thickness = 0.1
+# insertion_direction = "top"
+# shell_clearance_from_pcb = 1
+# force_smd = true # some components (typically modules) like Pico are TH by default
+
+# Any values that left unspecified here will derive from TH.component_shell
+#
+# Same properties can then be provided on a per component (ref) level, but
+# as deltas. Thus the final value can be different between components that
+# have the same footprint
+#
+# This scheme is easy to understand, apply overrides, and helps keep a level
+# of consistency across tools (e.g. from the jig generator # to openscad)
+
+[jig]
+#
+# Jigs of various types can be generated:
+#
+# - "TH_soldering" creates a jig to help solder
+#   through hole (TH) components. This creates
+#   the PCB holder, the base, and the shells
+#   for all components.
+#
+# - "component_fitting" creates only shells,
+#   and the base, without creating the holder.
+#
+type = "component_fitting"
+
+# NOTE:
+#
+# Many of the parameters here map to OpenSCAD, and can be tuned there.
+# E.g., parameters that are related to printing/manufacturing tolerances can be
+# tuned in OpenSCAD, without access to the original PCB file.
+#
+# Parameters that result in geometry generation in the tool (e.g. grooves)
+# aren't tunable from OpenSCAD. Also, the shapes of the shells aren't
+# tunable from OpenSCAD as parameters, but thickness and height can be
+# easily changed. Please tune parameters carefully, and always 
+# cross check generated models before printing/manufacturing.
+#
+
+# ------ You can override above values from here ------
+#
+# You can setup values on a per-footprint, and even per-component basis.
+# All components that use a particular footprint will inherit values from it.
+#
+# Each footprint has to setup at-least one value 'kicad_footprint'
+# It's highly recommended to also assign a user friendly name to
+# 'display_name'
+#
+# The following properties may also be setup
+#
+#   insertion_direction
+#   shell_type
+#   shell_thickness
+#   shell_gap
+#   shell_clearance_from_pcb
+#   force_smd
+#
+# Each component inherits values from the footprint it uses.
+# Numerical values can be tweaked by a delta value (+/-) applied to
+# the footprint properties.
+#
+# It is recommended that you specify a user friendly 'display_name',
+# if possible. The kicad reference designator is the default.
+# 'kicad_footprint' is a possible value, but if specified, this has
+# to match the kicad footprint reference exactly. Any other value is
+# treated as an error
+#
+# The following values can be specified per component
+#
+#   insertion_direction
+#   shell_type
+#   delta_shell_thickness
+#   delta_shell_gap
+#   delta_shell_clearance_from_pcb
+#   force_smd
+#
+# Below, bare-bones configuration for footprints and components
+# are provided.  All components that use a footprint are
+# listed right below the footprint for ease of customization.
+#
+#-----------------------------------------------------
+[footprint.FP11]
+kicad_footprint='Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical'
+display_name='Header 2x5'
+# components ['J4']
+# use footprint Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical
+
+[TH.J4]
+display_name='I2C+SPI Header'
+#kicad_footprint='Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical'
+
+#-----------------------------------------------------
+[footprint.FP10]
+kicad_footprint='Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical'
+display_name='Header 2x10'
+# components ['J10']
+# use footprint Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical
+
+[TH.J10]
+display_name='GPIOx14'
+#kicad_footprint='Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical'
+
+#-----------------------------------------------------
+[footprint.FP3]
+kicad_footprint='Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical'
+display_name='Header 2x3'
+# components ['J3']
+# use footprint Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical
+
+[TH.J3]
+display_name='BOOT UART'
+#kicad_footprint='Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical'
+
+#-----------------------------------------------------
+[footprint.FP1]
+kicad_footprint='Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical'
+display_name='Header 1x5'
+# components ['J7', 'J5', 'J9']
+# use footprint Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical
+
+[TH.J7]
+display_name='PWM'
+#kicad_footprint='Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical'
+
+[TH.J5]
+display_name='JTAG'
+#kicad_footprint='Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical'
+
+[TH.J9]
+display_name='SPI1'
+#kicad_footprint='Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical'
+
+#-----------------------------------------------------
+[footprint.FP2]
+kicad_footprint='Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical'
+display_name='Header 1x4'
+# components ['J1']
+# use footprint Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical
+
+[TH.J1]
+display_name='J1'
+#kicad_footprint='Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical'
+
+#-----------------------------------------------------
+[footprint.FP8]
+kicad_footprint='Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical'
+display_name='Header 2x20'
+# components ['J12']
+# use footprint Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical
+
+[TH.J12]
+display_name='RPi HAT'
+#kicad_footprint='Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical'
+
+#-----------------------------------------------------
+[footprint.FP4]
+kicad_footprint='Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical'
+display_name='Header 1x10'
+# components ['J6']
+# use footprint Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical
+
+[TH.J6]
+display_name='Pico GPIO'
+#kicad_footprint='Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical'
+
+#-----------------------------------------------------
+[footprint.FP6]
+kicad_footprint='Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical'
+display_name='Header 1x3'
+# components ['J13', 'J8', 'J11']
+# use footprint Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
+
+[TH.J13]
+display_name='I2C0'
+#kicad_footprint='Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical'
+
+[TH.J8]
+display_name='Pico Debug'
+#kicad_footprint='Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical'
+
+[TH.J11]
+display_name='UART1'
+#kicad_footprint='Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical'
+
+#-----------------------------------------------------
+[footprint.FP12]
+kicad_footprint='RPi_Pico:RPi_Pico_SMD_TH'
+display_name='RPi Pico'
+# components ['U1']
+# use footprint RPi_Pico:RPi_Pico_SMD_TH
+
+[TH.U1]
+display_name='Pico'
+#kicad_footprint='RPi_Pico:RPi_Pico_SMD_TH'
+
+#-----------------------------------------------------
+[footprint.FP9]
+kicad_footprint='Connector_USB:USB_Micro-B_Molex-105017-0001'
+display_name='USB Connector'
+# components ['J2']
+# use footprint Connector_USB:USB_Micro-B_Molex-105017-0001
+
+[TH.J2]
+display_name='USB Power'
+#kicad_footprint='Connector_USB:USB_Micro-B_Molex-105017-0001'
+
+#-----------------------------------------------------
+[footprint.FP7]
+kicad_footprint='project_lib:Mini360_step-down'
+display_name='Mini 360'
+# components ['U5', 'U4']
+# use footprint project_lib:Mini360_step-down
+
+[TH.U5]
+display_name='1.2V DCDC'
+#kicad_footprint='project_lib:Mini360_step-down'
+
+[TH.U4]
+display_name='3.3V DCDC'
+#kicad_footprint='project_lib:Mini360_step-down'
+
+#-----------------------------------------------------
+[footprint.FP5]
+kicad_footprint='Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical'
+display_name='Header 1x2'
+# components ['JP3', 'JP2', 'JP4', 'JP1']
+# use footprint Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical
+
+[TH.JP3]
+display_name='JP3'
+#kicad_footprint='Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical'
+
+[TH.JP2]
+display_name='1.2V'
+#kicad_footprint='Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical'
+
+[TH.JP4]
+display_name='JP4'
+#kicad_footprint='Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical'
+
+[TH.JP1]
+display_name='3.3V'
+#kicad_footprint='Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical'
+
